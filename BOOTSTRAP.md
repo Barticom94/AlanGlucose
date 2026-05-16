@@ -10,12 +10,14 @@ not a feeling.
 
 ## Day one — starting a new venture
 
-1. Clone or copy the template into a new folder named for the venture.
-2. Open it in Claude Code. Let the brain read `CLAUDE.md` and `state/active_context.md`.
-3. Run `/idea-intake`. The `business-intake` skill hands you a structured framework — fill it
-   in honestly, paste it back. The brain probes the gaps, then seeds every `state/` file.
-4. The brain hands off to `idea-interrogation`, then `/premortem` and `/reality-check` before
-   the end of week one.
+1. Open a fresh Claude Code window anywhere and paste the bootstrap prompt from `README.md`
+   (the "Starting a new venture" section). Give the venture a short, folder-safe name.
+2. A new Claude Code window opens by itself in the venture folder and onboards you
+   automatically — the `start` skill finishes setup, briefs you, shows the roadmap, and
+   hands straight to `business-intake` for the idea intake.
+3. Fill in the intake framework honestly and paste it back. The brain probes the gaps, then
+   seeds every `state/` file.
+4. Run `/premortem` and `/reality-check` before the end of week one.
 5. Commit `state/` to git after every meaningful conversation — a versioned record of the
    brain's thinking.
 

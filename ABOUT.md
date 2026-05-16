@@ -34,7 +34,7 @@ counteract that, deliberately:
 - **`CLAUDE.md`** — the behavioural contract, reloaded every session.
 - **`state/`** — a memory bank of plain markdown, updated at every task boundary, so the
   thread survives long sessions and compaction.
-- **`.claude/skills/`** — 31 progressive-disclosure skills, from idea interrogation to
+- **`.claude/skills/`** — 32 progressive-disclosure skills, from idea interrogation to
   ecommerce operations.
 - **`.claude/agents/`** — 14 subagents, used in builder→reviewer pairs.
 - **`.claude/hooks/`** — 4 Python hooks that back up context, restore it, log sessions, and

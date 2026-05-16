@@ -10,6 +10,9 @@ secrets/
 .claude/backups/*
 !.claude/backups/.gitkeep
 
+# First-run onboarding marker — per-clone, written by the start skill
+.claude/.initialised
+
 # OS / editor
 .DS_Store
 Thumbs.db

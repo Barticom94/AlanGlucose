@@ -7,11 +7,34 @@ anti-sycophancy enforced and context that survives long sessions.
 Clone this folder once per venture. Built for a single Yorkshire (UK) founder with an
 ecommerce-operations background.
 
+## Starting a new venture
+
+Open a fresh Claude Code window anywhere and paste this prompt:
+
+```
+Bootstrap a new AlanGlucose venture brain:
+1. Ask me for a short, folder-safe venture name.
+2. Clone the template into a new folder with that name:
+   git clone https://github.com/Barticom94/AlanGlucose.git "<venture-name>"
+3. Give the venture a clean history: delete the cloned .git folder, then run `git init`.
+4. Inside the new folder, copy CLAUDE.local.md.example to CLAUDE.local.md.
+5. Open a NEW Claude Code window running in the new folder: launch a new Windows Terminal
+   there with `claude` (fall back to a new PowerShell window if Windows Terminal is not
+   available). Print the exact command too, in case it must be run by hand.
+6. Tell me to switch to the new window — it briefs me and starts the idea intake. Do not
+   run the intake in this window.
+```
+
+The new window opens by itself in the venture folder and onboards you automatically —
+setup, a summary, the roadmap, then straight into the idea intake. The "First-time setup"
+and "Starter sequence" sections below are reference; the bootstrap and the `start` skill do
+them for you.
+
 ## How it works
 
 - **`CLAUDE.md`** — the behavioural contract Claude reloads every session and after compaction.
 - **`state/`** — the memory bank: hand-maintained markdown, updated at every task boundary.
-- **`.claude/skills/`** — 31 progressive-disclosure skills, from idea interrogation to operations.
+- **`.claude/skills/`** — 32 progressive-disclosure skills, from idea interrogation to operations.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
 - **`.claude/hooks/`** — 4 Python hooks: back up context, restore it, log sessions, block destructive commands.
 - **`.claude/SYCOPHANCY.md`** — the anti-flattery contract.
@@ -70,7 +93,7 @@ current gate is met — that is a feature, not a bug.
 │   ├── settings.json      Hooks, permissions, output style
 │   ├── SYCOPHANCY.md      Anti-sycophancy contract
 │   ├── agents/            14 subagents
-│   ├── skills/            31 skills (each a dir with SKILL.md)
+│   ├── skills/            32 skills (each a dir with SKILL.md)
 │   ├── hooks/             session-start, pre-compact, session-log, bash-guardrails
 │   ├── output-styles/     planning, building, reviewing, presenting
 │   └── backups/           PreCompact transcript snapshots

@@ -3,6 +3,11 @@
 > Behavioural contract for this venture. This is not documentation — it is a set of
 > operating rules. Hand-maintained. Update it when Claude gets something wrong, not before.
 
+## First run
+If `.claude/.initialised` does not exist, this is a freshly-cloned brain. Before anything
+else this session, run the `start` skill — it finishes setup, briefs the founder, shows the
+roadmap, and starts the idea intake. Do not skip it and do not wait to be asked.
+
 ## WHAT
 {{VENTURE_NAME}} — {{ONE_LINE_DESCRIPTION}}.
 Owner: {{FOUNDER_NAME}}, Yorkshire, UK. Single-founder bootstrap.

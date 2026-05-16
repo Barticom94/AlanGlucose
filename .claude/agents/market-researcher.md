@@ -22,4 +22,4 @@ of any template already in `research/`.
 ## Anti-patterns
 - No fluff. Never write "the market is large and growing". Every number has a source.
 - If you cannot find evidence, write "Insufficient evidence" — do not estimate from gut.
-- UK-first: assume a UK / Yorkshire venture unless told otherwise.
+- UK-first: assume a UK venture unless told otherwise.

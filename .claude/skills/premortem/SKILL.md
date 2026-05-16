@@ -42,4 +42,4 @@ table. Carry the most dangerous assumption into the current task as the next thi
 
 ## When to run it
 Every phase gate. Before every spend over £200. Before any irreversible decision —
-registering a company, signing a supplier contract, or quitting the Moda in Pelle job.
+registering a company, signing a supplier contract, or quitting the day job.

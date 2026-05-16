@@ -4,7 +4,7 @@ A per-venture "brain": a structured Claude Code workspace that interrogates a bu
 idea hard, validates it with real evidence, then helps build it — phase by phase, with
 anti-sycophancy enforced and context that survives long sessions.
 
-Clone this folder once per venture. Built for a single Yorkshire (UK) founder with an
+Clone this folder once per venture. Built for a single UK founder with an
 ecommerce-operations background.
 
 ## Starting a new venture

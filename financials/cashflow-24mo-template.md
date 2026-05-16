@@ -6,7 +6,7 @@
 
 ## Opening position
 - Cash available to invest: £
-- Personal living costs covered by: {{ the Moda in Pelle job / other income }}
+- Personal living costs covered by: {{ a day job / other income }}
 - Pre-revenue monthly burn: £
 
 ## Monthly model (summary — keep detailed scenarios in `scenarios/`)

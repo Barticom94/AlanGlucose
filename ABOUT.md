@@ -48,9 +48,9 @@ Each phase has named deliverables and one hard gate. Phase 0 is a single week sp
 whether the idea has earned a Phase 1 at all.
 
 ## Who it is for
-A single, first-time founder in the UK — Yorkshire specifically — with an ecommerce
-background, running a venture alongside a day job on limited hours and a near-zero starting
-budget. The tax, legal, funding, and fulfilment knowledge throughout is UK-specific.
+A single, first-time founder in the UK, with an ecommerce background, running a venture
+alongside a day job on limited hours and a near-zero starting budget. The tax, legal,
+funding, and fulfilment knowledge throughout is UK-specific.
 
 ## Getting started
 1. Copy `CLAUDE.local.md.example` to `CLAUDE.local.md` and set the API-key environment variables it lists.

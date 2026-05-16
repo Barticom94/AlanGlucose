@@ -39,8 +39,8 @@ Put these to the founder directly. Weak answers are findings.
 - **Unit economics:** "What is the CAC? The gross margin? At what LTV/CAC does this work?"
 - **UK-specific:** "Does this trip GDPR/PECR? Need a VAT-registered supplier? Cross any
   regulator — FCA, MHRA, Ofcom, ICO?"
-- **Personal:** "Can you keep the Moda in Pelle job while running this? What is the smallest
-  test that fits five hours a week?"
+- **Personal:** "Can you keep your day job while running this? What is the smallest test
+  that fits five hours a week?"
 
 ### 4. First-pass frameworks
 Fill a Lean Canvas v0 (use the `gtm-positioning` skill). State founder-market fit honestly.

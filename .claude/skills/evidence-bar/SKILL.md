@@ -1,6 +1,6 @@
 ---
 name: evidence-bar
-description: The proof standard for the venture brain. Use when any claim is made about demand, market size, pricing, channels, or retention, and to audit documents for unsourced claims. Defines exactly what evidence each type of claim requires before it can be treated as fact.
+description: The proof standard for AlanGlucose. Use when any claim is made about demand, market size, pricing, channels, or retention, and to audit documents for unsourced claims. Defines exactly what evidence each type of claim requires before it can be treated as fact.
 user-invocable: true
 ---
 

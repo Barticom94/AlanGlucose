@@ -1,4 +1,4 @@
-# Venture Brain — a Claude Code template for evaluating and building a business
+# AlanGlucose — a Claude Code template for evaluating and building a business
 
 A per-venture "brain": a structured Claude Code workspace that interrogates a business
 idea hard, validates it with real evidence, then helps build it — phase by phase, with

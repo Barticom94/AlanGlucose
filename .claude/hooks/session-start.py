@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SessionStart hook: re-injects venture-brain context after startup, compact, or clear.
+"""SessionStart hook: re-injects AlanGlucose context after startup, compact, or clear.
 
 Prints plain text to stdout, which Claude Code adds to the session context. The script
 fails silent (exit 0) on any error — a broken hook must never break a session.
@@ -40,7 +40,7 @@ def main():
     source = data.get("source", "startup")
 
     out = [
-        "=== VENTURE BRAIN — SESSION CONTEXT ===",
+        "=== ALANGLUCOSE — SESSION CONTEXT ===",
         f"(restored by the SessionStart hook; source: {source})",
         "",
         "--- state/active_context.md ---",

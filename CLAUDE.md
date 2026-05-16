@@ -1,4 +1,4 @@
-# CLAUDE.md — Venture Brain
+# CLAUDE.md — AlanGlucose
 
 > Behavioural contract for this venture. This is not documentation — it is a set of
 > operating rules. Hand-maintained. Update it when Claude gets something wrong, not before.

@@ -15,8 +15,8 @@ Copy this shape, newest at the top:
 
 ---
 
-### [{{DATE}}] Adopt the Venture Brain
-- **Decision:** Use the Venture Brain template to evaluate and build this venture.
+### [{{DATE}}] Adopt AlanGlucose
+- **Decision:** Use the AlanGlucose template to evaluate and build this venture.
 - **Context:** Starting Phase 0 idea interrogation.
 - **Alternatives considered:** Ad-hoc notes; a spreadsheet; no structure.
 - **Why:** A structured, anti-sycophantic, phase-gated process catches a bad idea before

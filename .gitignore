@@ -1,0 +1,33 @@
+# Personal / secrets — never commit
+CLAUDE.local.md
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Claude Code transcript backups (local recovery only; can be large)
+.claude/backups/*
+!.claude/backups/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs / temp
+*.log
+tmp/

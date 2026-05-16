@@ -1,0 +1,2 @@
+# Keeps .claude/backups/ tracked in git. PreCompact transcript snapshots land here
+# and are git-ignored (see .gitignore).

@@ -80,6 +80,7 @@ Read at session start; keep current; commit to git after every significant decis
 - "funding" / "grants" / `/grant-finder` → skill `uk-funding`
 - "pitch deck" / `/pitch-deck-draft` → skill `pitch-deck`
 - "is this claim true?" → subagent `evidence-checker` + skill `evidence-bar`
+- "I've decided to proceed anyway" / a conscious override → respect it; log the disagreement in `state/decisions_log.md`; keep the phase gates intact
 
 ## Load policy
 ALWAYS at session start: this file, `state/active_context.md`, `state/progress.md`,

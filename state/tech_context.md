@@ -10,7 +10,7 @@
 
 ## MCP servers — starter pack (active in `.mcp.json`)
 `companies-house`, `exa`, `firecrawl`, `filesystem`, `sequential-thinking`, `github`,
-`basic-memory`. Each needs the environment variables listed in `CLAUDE.local.md`.
+`basic-memory`. Each needs the environment variables listed in `CLAUDE.local.md.example`.
 
 ## MCP servers — growth pack (wire in at Phase 2+, once the venture is live)
 - Shopify Dev MCP — via the Shopify AI Toolkit

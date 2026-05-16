@@ -17,7 +17,7 @@
     },
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "${BRAIN_ROOT}"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
     },
     "sequential-thinking": {
       "command": "npx",

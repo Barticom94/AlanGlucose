@@ -53,7 +53,7 @@ background, running a venture alongside a day job on limited hours and a near-ze
 budget. The tax, legal, funding, and fulfilment knowledge throughout is UK-specific.
 
 ## Getting started
-1. Set the API-key environment variables listed in `CLAUDE.local.md`.
+1. Copy `CLAUDE.local.md.example` to `CLAUDE.local.md` and set the API-key environment variables it lists.
 2. Run the `business-intake` skill (`/idea-intake`) — it hands you the intake framework,
    probes your answers, and seeds every `state/` file and the `CLAUDE.md` placeholders.
 3. The brain hands off to `idea-interrogation`, which asks the hard questions.

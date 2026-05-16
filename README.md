@@ -26,10 +26,13 @@ current gate is met — that is a feature, not a bug.
 
 ## First-time setup
 
-1. Set the API-key environment variables listed in `CLAUDE.local.md`.
-2. Edit `CLAUDE.md` — fill the `{{PLACEHOLDERS}}` (venture name, description, phase, gate).
-3. Review `.mcp.json` and verify each MCP install command — the ecosystem moves fast.
-4. Confirm hooks: `.claude/settings.json` invokes `py .claude/hooks/*.py` (Python 3.13).
+1. (Once, ever) Copy `GLOBAL-CLAUDE.md.example` to `~/.claude/CLAUDE.md` — optional but
+   recommended; it sets anti-sycophancy defaults for every Claude Code session.
+2. Read `BOOTSTRAP.md` — the phase model, the gates, and the order to do things in.
+3. Copy `CLAUDE.local.md.example` to `CLAUDE.local.md` and set the API-key environment
+   variables it lists.
+4. Review `.mcp.json` and verify each MCP install command — the ecosystem moves fast.
+5. Confirm hooks: `.claude/settings.json` invokes `py .claude/hooks/*.py` (Python 3.13).
 
 ## Starter sequence for a new venture
 
@@ -56,9 +59,12 @@ current gate is met — that is a feature, not a bug.
 
 ```
 .
-├── CLAUDE.md              Behavioural contract
-├── CLAUDE.local.md        Personal, git-ignored
-├── .mcp.json              MCP server registry
+├── CLAUDE.md                 Behavioural contract
+├── ABOUT.md                  What AlanGlucose is, and why
+├── BOOTSTRAP.md              The operating manual — read this first
+├── CLAUDE.local.md.example   Personal config — copy to CLAUDE.local.md
+├── GLOBAL-CLAUDE.md.example  Optional global config for ~/.claude/
+├── .mcp.json                 MCP server registry
 ├── README.md
 ├── .claude/
 │   ├── settings.json      Hooks, permissions, output style

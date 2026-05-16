@@ -1,0 +1,31 @@
+# CLAUDE.local.md — example
+
+> Copy this file to `CLAUDE.local.md` (drop the `.example`). That copy is git-ignored — it
+> never leaves your machine. Keep secrets *by reference* here; never paste secret values.
+> Actual keys belong in environment variables.
+
+## API keys — set as environment variables (do NOT paste values here)
+`.mcp.json` reads these. Set each via Windows Settings → System → Environment Variables, or
+your shell profile. Tick when done:
+
+- [ ] `COMPANIES_HOUSE_API_KEY` — free, register at developer.company-information.service.gov.uk
+- [ ] `EXA_API_KEY` — exa.ai (free tier exists)
+- [ ] `FIRECRAWL_API_KEY` — firecrawl.dev
+- [ ] `GITHUB_PAT` — github.com → Settings → Developer settings → personal access token (scope: repo)
+
+## My situation
+Employment status, hours a week for this venture, cash available to invest, risk tolerance,
+other commitments. The brain uses this to calibrate recommendations — five hours a week and
+£500 is a different venture from twenty hours and £5k.
+
+## Machine notes
+- Python: `py` runs the hooks in `.claude/hooks/`.
+- `uv` is needed for the `basic-memory` MCP (`uvx`). Install: `py -m pip install uv`.
+- This clone lives at: {{ABSOLUTE_PATH}}
+
+## Personal scratch
+Anything you want the brain to see but never commit — half-formed ideas, reminders, draft
+numbers, "I'm wobbling on whether to continue". Clear it whenever.
+
+## Do not surface unprompted
+Anything you would rather the brain not raise unless you raise it first.

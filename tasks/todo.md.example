@@ -1,0 +1,18 @@
+# Todo — example
+
+> Copy this to `todo.md` (drop the `.example`). The working to-do list for the venture.
+> Newest items at the top. Mark done with `[x]` but do not delete — completed items are
+> useful history. `state/active_context.md` stays the source of "what next"; this is the
+> fuller list.
+
+## This week
+- [ ] {{ the single most important objective, set by the weekly-review skill }}
+
+## Backlog
+- [ ] {{ items waiting to be picked up }}
+
+## Blocked
+- [ ] {{ items blocked on something external — note what is blocking them }}
+
+## Done
+- [x] {{ completed items, with the date }}

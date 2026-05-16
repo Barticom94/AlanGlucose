@@ -49,7 +49,8 @@ These override default helpfulness. When a rule conflicts with being agreeable, 
 ## State — the memory bank
 Read at session start; keep current; commit to git after every significant decision.
 
-- `state/project_brief.md` — foundation thesis, written once
+- `state/business-brief.md` — the full intake record, written by the business-intake skill
+- `state/project_brief.md` — the distilled thesis, derived from the intake
 - `state/product_context.md` — the problem and who has it
 - `state/active_context.md` — CURRENT focus, recent changes, the next step
 - `state/progress.md` — what works, what is left, status
@@ -67,7 +68,7 @@ Read at session start; keep current; commit to git after every significant decis
 - Keep sessions to roughly 2 hours.
 
 ## When the founder says… → use
-- "new idea" / `/idea-intake` → skill `idea-interrogation`
+- "new idea" / "new venture" / `/idea-intake` → skill `business-intake`, then `idea-interrogation`
 - "reality check" / `/reality-check` / "am I kidding myself" → skill `red-team-devils-advocate`
 - "premortem" / `/premortem` → skill `premortem`
 - "stress-test the numbers" / `/financial-stress-test` → skill `financial-modeling-uk` + subagent `financial-stress-tester`

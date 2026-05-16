@@ -11,7 +11,7 @@ ecommerce-operations background.
 
 - **`CLAUDE.md`** — the behavioural contract Claude reloads every session and after compaction.
 - **`state/`** — the memory bank: hand-maintained markdown, updated at every task boundary.
-- **`.claude/skills/`** — 30 progressive-disclosure skills, from idea interrogation to operations.
+- **`.claude/skills/`** — 31 progressive-disclosure skills, from idea interrogation to operations.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
 - **`.claude/hooks/`** — 4 Python hooks: back up context, restore it, log sessions, block destructive commands.
 - **`.claude/SYCOPHANCY.md`** — the anti-flattery contract.
@@ -33,15 +33,16 @@ current gate is met — that is a feature, not a bug.
 
 ## Starter sequence for a new venture
 
-1. Write `state/project_brief.md` — a one-paragraph thesis, no more.
-2. Set the current phase in `CLAUDE.md` to Phase 0.
-3. Run `/idea-intake` → the `idea-interrogation` skill walks Disciplined Entrepreneurship
-   steps 1–3 and Mom Test preparation.
-4. Run `/premortem` → capture initial failure modes into `state/risks.md`.
-5. Commit `state/` to git — the first checkpoint.
-6. Open the Phase 0 task: interview 10 strangers about the problem.
-7. Keep sessions ≤ 2 hours; run `/session-handoff` at the end of each.
-8. After ~1 week, run `/reality-check` and the Phase 0 gate. Advance, or revise the thesis.
+1. Run `/idea-intake` → the `business-intake` skill hands you the intake framework. Fill it
+   in, paste it back; the brain probes the gaps and seeds every `state/` file — including the
+   `CLAUDE.md` placeholders and the phase.
+2. The brain hands off to `idea-interrogation` — Disciplined Entrepreneurship steps 1–3 and
+   Mom Test preparation.
+3. Run `/premortem` → capture initial failure modes into `state/risks.md`.
+4. Commit `state/` to git — the first checkpoint.
+5. Open the Phase 0 task: interview 10 strangers about the problem.
+6. Keep sessions ≤ 2 hours; run `/session-handoff` at the end of each.
+7. After ~1 week, run `/reality-check` and the Phase 0 gate. Advance, or revise the thesis.
 
 ## Conventions
 
@@ -63,11 +64,11 @@ current gate is met — that is a feature, not a bug.
 │   ├── settings.json      Hooks, permissions, output style
 │   ├── SYCOPHANCY.md      Anti-sycophancy contract
 │   ├── agents/            14 subagents
-│   ├── skills/            30 skills (each a dir with SKILL.md)
+│   ├── skills/            31 skills (each a dir with SKILL.md)
 │   ├── hooks/             session-start, pre-compact, session-log, bash-guardrails
 │   ├── output-styles/     planning, building, reviewing, presenting
 │   └── backups/           PreCompact transcript snapshots
-├── state/                 The memory bank (11 files)
+├── state/                 The memory bank (12 files)
 ├── docs/                  UK-LEGAL-TAX, UK-FUNDING, ECOM-OPS, BRAND-VOICE, sops/
 ├── research/              customer-interviews, competitor-profiles, market-reports, sector-notes
 ├── financials/            unit-economics & cashflow templates, scenarios/

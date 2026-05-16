@@ -12,6 +12,7 @@ Phase 0 — Idea Interrogation. Started {{DATE}}.
 - {{ ... }}
 
 ## Not started (Phase 0 deliverables)
+- Business intake completed (`state/business-brief.md` seeded via the business-intake skill)
 - 10 customer interviews with strangers
 - Disciplined Entrepreneurship steps 1–3
 - Lean Canvas v0

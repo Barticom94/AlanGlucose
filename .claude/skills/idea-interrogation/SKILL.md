@@ -1,6 +1,6 @@
 ---
 name: idea-interrogation
-description: Interrogate a new or early business idea before any time or money is spent. Use when the founder says "new idea", "I'm thinking of", "evaluate this idea", "/idea-intake", or is starting Phase 0. Walks Disciplined Entrepreneurship steps 1-3 and prepares Mom Test customer discovery. The output is a defended thesis or a documented kill.
+description: Interrogate a captured business idea hard, before any time or money is spent. Use after the business-intake skill has seeded state/business-brief.md, or when the founder says "interrogate this idea", "is this any good", "stress-test the idea", or is in Phase 0. Walks Disciplined Entrepreneurship steps 1-3 and prepares Mom Test customer discovery. The output is a defended thesis or a documented kill.
 user-invocable: true
 ---
 
@@ -14,10 +14,11 @@ Read `.claude/SYCOPHANCY.md` first. Lead with the hard questions, not encouragem
 
 ## Process
 
-### 1. Capture the raw idea
-Get the founder's one-paragraph thesis: who has what problem, what you sell, why they pay,
-why you. Write it to `state/project_brief.md`. If they cannot say it in a paragraph, the
-idea is not yet clear — that is the first finding, not a detail to skip past.
+### 1. Start from the intake
+The idea is captured first by the `business-intake` skill, which seeds `state/business-brief.md`
+and the other state files. Read `state/business-brief.md` before anything else. If it is empty,
+stop and run `business-intake` (or `/idea-intake`) — interrogation needs a full picture to
+bite on, not a one-line thesis.
 
 ### 2. Disciplined Entrepreneurship, steps 1-3 (Aulet, MIT)
 - **Step 1 — Market Segmentation.** List 6-12 candidate end markets. Do not choose yet.

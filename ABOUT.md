@@ -34,7 +34,7 @@ counteract that, deliberately:
 - **`CLAUDE.md`** — the behavioural contract, reloaded every session.
 - **`state/`** — a memory bank of plain markdown, updated at every task boundary, so the
   thread survives long sessions and compaction.
-- **`.claude/skills/`** — 30 progressive-disclosure skills, from idea interrogation to
+- **`.claude/skills/`** — 31 progressive-disclosure skills, from idea interrogation to
   ecommerce operations.
 - **`.claude/agents/`** — 14 subagents, used in builder→reviewer pairs.
 - **`.claude/hooks/`** — 4 Python hooks that back up context, restore it, log sessions, and
@@ -54,8 +54,8 @@ budget. The tax, legal, funding, and fulfilment knowledge throughout is UK-speci
 
 ## Getting started
 1. Set the API-key environment variables listed in `CLAUDE.local.md`.
-2. Fill the `{{PLACEHOLDERS}}` in `CLAUDE.md`; set the phase to 0.
-3. Write `state/project_brief.md` — a one-paragraph thesis, no more.
-4. Run the `idea-interrogation` skill, and let it ask the hard questions.
+2. Run the `business-intake` skill (`/idea-intake`) — it hands you the intake framework,
+   probes your answers, and seeds every `state/` file and the `CLAUDE.md` placeholders.
+3. The brain hands off to `idea-interrogation`, which asks the hard questions.
 
 Clone this folder once per venture. Built to the "Claude Brain" specification.

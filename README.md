@@ -9,7 +9,7 @@ ecommerce-operations background.
 
 ## Starting a new venture
 
-Open a fresh Claude Code window anywhere and paste this prompt:
+In the Claude Code desktop app, paste this prompt into any session:
 
 ```
 Bootstrap a new AlanGlucose venture brain:
@@ -18,17 +18,16 @@ Bootstrap a new AlanGlucose venture brain:
    git clone https://github.com/Barticom94/AlanGlucose.git "<venture-name>"
 3. Give the venture a clean history: delete the cloned .git folder, then run `git init`.
 4. Inside the new folder, copy CLAUDE.local.md.example to CLAUDE.local.md.
-5. Open a NEW Claude Code window running in the new folder: launch a new Windows Terminal
-   there with `claude` (fall back to a new PowerShell window if Windows Terminal is not
-   available). Print the exact command too, in case it must be run by hand.
-6. Tell me to switch to the new window — it briefs me and starts the idea intake. Do not
-   run the intake in this window.
+5. Open the new folder in File Explorer, and copy its full absolute path to the clipboard.
+6. Show me the path, and tell me to open that folder as a new session in the Claude Code
+   desktop app. Do not start the intake in this window.
 ```
 
-The new window opens by itself in the venture folder and onboards you automatically —
-setup, a summary, the roadmap, then straight into the idea intake. The "First-time setup"
-and "Starter sequence" sections below are reference; the bootstrap and the `start` skill do
-them for you.
+Then, in the desktop app, start a new session with that folder as the Project folder — its
+path is already on your clipboard, so just paste it. The brain onboards you automatically
+from there: it finishes setup, briefs you, shows the roadmap, and runs the idea intake. The
+"First-time setup" and "Starter sequence" sections below are reference; the bootstrap and
+the `start` skill do them for you.
 
 ## How it works
 

@@ -10,11 +10,12 @@ not a feeling.
 
 ## Day one — starting a new venture
 
-1. Open a fresh Claude Code window anywhere and paste the bootstrap prompt from `README.md`
-   (the "Starting a new venture" section). Give the venture a short, folder-safe name.
-2. A new Claude Code window opens by itself in the venture folder and onboards you
-   automatically — the `start` skill finishes setup, briefs you, shows the roadmap, and
-   hands straight to `business-intake` for the idea intake.
+1. In the Claude Code desktop app, paste the bootstrap prompt from `README.md` (the
+   "Starting a new venture" section) into any session. Give the venture a short name.
+2. The bootstrap clones and sets up the venture folder, then hands you its path. Open that
+   folder as a new session in the desktop app — the brain then onboards you automatically:
+   the `start` skill finishes setup, briefs you, shows the roadmap, and hands straight to
+   `business-intake` for the idea intake.
 3. Fill in the intake framework honestly and paste it back. The brain probes the gaps, then
    seeds every `state/` file.
 4. Run `/premortem` and `/reality-check` before the end of week one.

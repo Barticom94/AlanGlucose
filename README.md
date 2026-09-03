@@ -11,9 +11,10 @@ or the terminal) and in other AI harnesses that read `AGENTS.md`, such as Codex.
 
 You need the Claude Code app (desktop) with a Claude subscription. Nothing else.
 
-1. Download the template: [main.zip](https://github.com/Barticom94/AlanGlucose/archive/refs/heads/main.zip)
+1. Download the latest release: [AlanGlucose.zip](https://github.com/Barticom94/AlanGlucose/releases/latest/download/AlanGlucose.zip)
+   (or pick a version on the [releases page](https://github.com/Barticom94/AlanGlucose/releases)).
 2. Unzip it properly — on Windows right-click → *Extract All…*; on a Mac double-click it.
-   Rename the unzipped folder (`AlanGlucose-main`) to your venture's name and put it
+   You get a folder called `AlanGlucose`. Rename it to your venture's name and put it
    somewhere sensible, like Documents.
 3. Open the Claude Code app, start a new session, and choose that folder as the project.
    The app asks whether you trust the folder — say yes. It will also ask permission for a
@@ -111,6 +112,10 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 After editing anything under `.claude/skills/`, `.claude/agents/`, or `.mcp.json.example`,
 run `python tools/build-adapters.py` and commit the regenerated `.agents/` and `.codex/`
 folders. CI fails if they are stale. Founders using a venture never need this.
+
+To publish a new version: `git tag v1.x.y && git push --tags`. CI builds `AlanGlucose.zip`
+from the tag (tracked files only; `tools/` and `.github/` excluded) and creates the release,
+so the README's "latest release" link always serves the newest one.
 
 ## Caveats
 

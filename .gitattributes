@@ -1,0 +1,5 @@
+# Excluded from the founder download (the release ZIP is built with `git archive`).
+# These are template-maintenance files; a venture never needs them.
+.github        export-ignore
+tools          export-ignore
+.gitattributes export-ignore

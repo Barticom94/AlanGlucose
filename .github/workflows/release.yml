@@ -1,0 +1,31 @@
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the generated adapters are current
+        run: python tools/build-adapters.py --check
+
+      - name: Build the founder ZIP
+        # Tracked files only; tools/ and .github/ are dropped by .gitattributes export-ignore.
+        # No folder prefix, so "Extract All" on Windows and double-click on macOS both give
+        # one folder named AlanGlucose rather than a folder inside a folder.
+        run: git archive --format=zip -o AlanGlucose.zip HEAD
+
+      - name: Create the release with the ZIP attached
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create "$GITHUB_REF_NAME" AlanGlucose.zip
+          --title "AlanGlucose $GITHUB_REF_NAME"
+          --notes-file .github/release-notes.md

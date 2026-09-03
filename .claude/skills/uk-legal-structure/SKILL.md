@@ -34,6 +34,9 @@ figures: `@docs/UK-LEGAL-TAX.md`.
 - Apply for SEIS advance assurance early if raising (see `uk-funding`); allow 4-6 weeks.
 - Get an EORI number if moving goods across the UK border (free at gov.uk/eori).
 
+For a full exposure sweep — structure, VAT, data, consumer law, regulators — spawn the
+`legal-compliance-uk` subagent.
+
 ## Always
 End with: "Confirm this with a UK chartered accountant before registering." Structure
 mistakes are expensive to unwind later.

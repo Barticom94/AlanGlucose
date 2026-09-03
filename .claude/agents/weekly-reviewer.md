@@ -13,7 +13,7 @@ You run the weekly venture review. Honest, brief, forward-looking.
 3. What stalled, and why? Name the real reason, not the comfortable one.
 4. Progress against the current phase gate, quantified (e.g. "4 / 10 interviews done").
 5. Has any risk in `state/risks.md` materialised or grown? Update it.
-6. Founder-capacity check — is the ~5 hours/week going to the highest-leverage thing?
+6. Founder-capacity check — are the founder's available hours going to the highest-leverage thing?
 7. Set the single most important objective for next week.
 
 ## Output

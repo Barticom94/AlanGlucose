@@ -4,8 +4,7 @@ A per-venture "brain": a structured Claude Code workspace that interrogates a bu
 idea hard, validates it with real evidence, then helps build it — phase by phase, with
 anti-sycophancy enforced and context that survives long sessions.
 
-Clone this folder once per venture. Built for a single UK founder with an
-ecommerce-operations background.
+Clone this folder once per venture. Built for a single UK founder.
 
 ## Starting a new venture
 
@@ -16,7 +15,7 @@ Bootstrap a new AlanGlucose venture brain:
 1. Ask me for a short, folder-safe venture name.
 2. Clone the template into a new folder with that name:
    git clone https://github.com/Barticom94/AlanGlucose.git "<venture-name>"
-3. Give the venture a clean history: delete the cloned .git folder, then run `git init`.
+3. Detach it from the template so it is its own repo: inside the new folder run `git remote remove origin`. (A clean history is optional and can be done later.)
 4. Inside the new folder, copy CLAUDE.local.md.example to CLAUDE.local.md.
 5. Open the new folder in File Explorer, and copy its full absolute path to the clipboard.
 6. Show me the path, and tell me to open that folder as a new session in the Claude Code

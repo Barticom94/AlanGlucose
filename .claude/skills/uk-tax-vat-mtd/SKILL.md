@@ -13,7 +13,7 @@ decision. Full figures: `@docs/UK-LEGAL-TAX.md`. This is information, not tax ad
 - **Registration threshold £90,000** of VAT-taxable turnover on a rolling 12 months.
   Deregistration threshold £88,000.
 - Standard rate 20%. The **Flat Rate Scheme** is available if VAT-taxable turnover is
-  ≤ £150,000 excl. VAT — it can simplify admin for a small ecommerce business.
+  ≤ £150,000 excl. VAT — it can simplify admin for a small business.
 - Crossing the threshold is a margin cliff for B2C: you either absorb 20% or raise prices.
   Model it with `financial-modeling-uk` well before you near £90k.
 - You can register voluntarily before the threshold — sometimes worth it to reclaim input VAT.

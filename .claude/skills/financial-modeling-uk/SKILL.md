@@ -11,7 +11,7 @@ This skill builds the model; the `financial-modeler-uk` subagent does heavy buil
 `financial-stress-tester` subagent reviews them in a clean context.
 
 ## The core numbers
-- **Gross margin** = (price − COGS) / price. Below 40% is a warning for an ecommerce venture.
+- **Gross margin** = (price − COGS) / price. Below 40% is a warning for a product business.
 - **CAC** — the fully loaded cost to acquire one paying customer, including the founder's time.
 - **LTV** — gross-margin pounds from a customer over their lifetime, not their revenue.
 - **LTV / CAC** — target ≥ 3. Below 3, the business does not work yet; say so.
@@ -23,7 +23,7 @@ This skill builds the model; the `financial-modeler-uk` subagent does heavy buil
   margin step-change at registration — it is a real cliff, not a footnote.
 - Corporation Tax: 19% on profits ≤ £50k, 25% ≥ £250k, marginal relief between.
 - Card processing: roughly 1.5% + 20p on UK consumer cards.
-- Carrier, packaging, and returns cost per order — see `@docs/ECOM-OPS.md`.
+- For physical goods: carrier, packaging, and returns cost per order — see `@docs/ECOM-OPS.md`.
 Verify every rate against gov.uk; UK tax figures move at 6 April and 1 February.
 
 ## Method

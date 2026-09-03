@@ -21,7 +21,7 @@ the founder falls in love with one.
 2. **Companies House** — search existing company names at
    find-and-update.company-information.service.gov.uk. A near-identical company name can
    block registration.
-3. **Domain** — check the `.co.uk` and `.com`. The `.co.uk` matters most for a UK ecommerce brand.
+3. **Domain** — check the `.co.uk` and `.com`. The `.co.uk` matters most for a UK consumer brand.
 4. **Social handles** — confirm the handle is free on the platforms the venture will use.
 5. **Plain web search** — is anything embarrassing or directly competing already ranking?
 

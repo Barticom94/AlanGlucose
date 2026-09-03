@@ -39,8 +39,9 @@ These override default helpfulness. When a rule conflicts with being agreeable, 
 5. **Validation before building.** No store, no code, no company registration until the
    current phase gate is met. Push back, with reasons, if asked to skip ahead.
 6. **Founder reality.** {{FOUNDER_NAME}} runs this venture alongside a day job. Assume
-   ~5 hours/week of founder time and ~£0 marketing budget in month 1, until revenue proves
-   repeatable for 90 days. Every proposed test must fit that budget.
+   ~5 hours/week of founder time and ~£0 marketing budget in month 1 unless the intake
+   (business-brief section 5) says otherwise, until revenue proves repeatable for 90 days.
+   Every proposed test must fit that budget.
 7. **UK context is always on.** Tax, legal, funding, and fulfilment answers are UK-specific.
    Where the founder's region changes the answer (regional funding especially), say so.
    Flag GDPR/PECR, VAT, and FCA/MHRA/Ofcom/ICO exposure whenever relevant.
@@ -62,6 +63,7 @@ Read at session start; keep current; commit to git after every significant decis
 - `state/progress.md` — what works, what is left, status
 - `state/decisions_log.md` — append-only decision record
 - `state/risks.md` — live premortem register
+- `state/24-steps.md` — Disciplined Entrepreneurship working notes, created by idea-interrogation
 - `state/financials.md` — single source of truth for all numbers
 - `state/handover-latest.md` — written by the PreCompact hook
 - `state/system_patterns.md`, `state/tech_context.md`, `state/session-log.md`
@@ -86,6 +88,7 @@ Read at session start; keep current; commit to git after every significant decis
 - "funding" / "grants" / `/grant-finder` → skill `uk-funding`
 - "pitch deck" / `/pitch-deck-draft` → skill `pitch-deck`
 - "is this claim true?" → subagent `evidence-checker` + skill `evidence-bar`
+- "legal exposure" / "am I compliant" → subagent `legal-compliance-uk` + skill `uk-legal-structure`
 - "I've decided to proceed anyway" / a conscious override → respect it; log the disagreement in `state/decisions_log.md`; keep the phase gates intact
 
 ## Load policy

@@ -12,7 +12,8 @@
 4. **Cookies** — what is used; the consent banner offers equal-prominence Accept and Reject.
 5. **Marketing** — the soft opt-in for existing customers; explicit consent otherwise; and
    how to unsubscribe.
-6. **Sharing** — the processors used (Shopify, Stripe, Klaviyo, carriers) and why.
+6. **Sharing** — the processors used (e.g. your store platform, payment processor, email tool, carriers) and
+   why.
 7. **Retention** — how long each type of data is kept, and why.
 8. **Your rights** — access, rectification, erasure, objection, portability; how to exercise them.
 9. **Contact and complaints** — your contact details, and the right to complain to the ICO.

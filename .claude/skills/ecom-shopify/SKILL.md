@@ -6,8 +6,8 @@ user-invocable: true
 
 # Ecommerce — Shopify
 
-Shopify is the right platform for this founder — it matches an ecommerce-operations
-background and handles hosting, payments, security, and PCI compliance. Do not build the
+Shopify is the default platform for an online store — it handles hosting, payments,
+security, and PCI compliance. Do not build the
 store until the Phase 1 gate is met — ≥ 3 real commitments. A store before validation is a
 costly distraction.
 
@@ -25,7 +25,7 @@ costly distraction.
 
 ## Apps — resist the temptation
 Every app is a monthly cost and a speed cost. Install one only when a real problem demands
-it. Klaviyo for email is the early exception (already connected).
+it. An email tool with automated flows (e.g. Klaviyo) is the early exception.
 
 ## Wiring the brain in
 At Phase 2, add the growth-pack MCPs as they become relevant — Shopify Dev MCP, Stripe,

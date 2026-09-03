@@ -25,7 +25,7 @@ the founder does it personally, and that is also free customer research.
 4. Treat complaints as data — and as UK consumer-law signals (see `ops-returns`).
 
 ## Automate first, automate last
-Automate order and shipping notifications now (Klaviyo flows). Keep actual customer-service
+Automate order and shipping notifications now (your email tool's automated flows). Keep actual customer-service
 replies manual far longer than feels efficient — a wrong automated reply damages the brand
 in a way an order confirmation never will.
 

@@ -1,14 +1,16 @@
 ---
 name: marketing-email
-description: Plan and build email and SMS marketing in Klaviyo. Use when the founder asks about email marketing, Klaviyo, newsletters, automated flows, abandoned cart, or SMS. Covers the core flows and UK PECR/consent rules.
+description: Plan and build email and SMS marketing in Klaviyo or any tool with automated flows. Use when the founder asks about email marketing, Klaviyo, newsletters, automated flows, abandoned cart, or SMS. Covers the core flows and UK PECR/consent rules.
 user-invocable: true
 ---
 
-# Marketing — Email (Klaviyo)
+# Marketing — Email
 
-Email is the highest-ROI channel a bootstrapped ecommerce venture has — it is owned, not
-rented, and the founder already has Klaviyo connected. Build the automated flows first; they
-earn money while the founder sleeps.
+Email is the highest-ROI owned channel a bootstrapped venture has — owned, not
+rented. Any
+tool with automated flows works (Klaviyo is a strong default for online stores). Build the
+automated flows first; they earn money while the founder sleeps. For a non-store business,
+swap the cart flows below for sign-up, trial, and enquiry follow-ups.
 
 ## UK consent rules — get this right first
 - PECR governs marketing email, and PECR fines now match UK GDPR levels. This is not a

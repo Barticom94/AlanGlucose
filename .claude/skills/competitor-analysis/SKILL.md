@@ -17,7 +17,7 @@ directors from Companies House — it reveals scale and health a website hides.
 
 ## 2. Porter's Five Forces — rate the industry
 - **Competitive rivalry** — how many rivals, how aggressive, how differentiated.
-- **Supplier power** — can suppliers squeeze your margin? Critical for ecommerce.
+- **Supplier power** — can suppliers squeeze your margin? Critical for any venture that buys in or manufactures.
 - **Buyer power** — can customers force the price down? Are switching costs low?
 - **Threat of substitutes** — what else solves the problem, including doing nothing.
 - **Threat of new entrants** — how easily can the next founder copy this?

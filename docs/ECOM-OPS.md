@@ -40,8 +40,8 @@ crossing the VAT threshold or making the first hire.
 
 | Tool | Use | Indicative pricing | Note |
 |------|-----|--------------------|------|
-| Shopify | Ecommerce store | from £19/mo Basic | Native fit for an ecommerce-ops founder |
-| Klaviyo | Email / SMS | Free under 250 contacts | Already connected |
+| Shopify | Ecommerce store | from £19/mo Basic | Native fit for an online store |
+| Klaviyo | Email / SMS | Free under 250 contacts | Strong default for online stores |
 | Carrd | Smoke-test landing pages | ~$9/yr | Cheapest for Phase 1 smoke tests |
 | Framer / Webflow | Marketing site | £14–£15/mo | Upgrade post-validation |
 | Tally | Forms | Free, unlimited | Cheaper than Typeform |

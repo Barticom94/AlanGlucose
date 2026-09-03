@@ -14,10 +14,10 @@ makes it painful.
 - **FreeAgent** — strong for sole traders and freelancers, with a UK-specific tax workflow.
   **Free** with a Mettle, NatWest, RBS, or Ulster business account (one transaction a month
   keeps it free). Recommended at the start if the founder banks with one of those.
-- **Xero** — best for a growing ecommerce SME: the widest UK accountant adoption and the
+- **Xero** — best for a growing SME: the widest UK accountant adoption and the
   most integrations (Shopify, Stripe, GoCardless, Dext). Recommended once VAT-registered or
   hiring. From roughly £16/month.
-- **QuickBooks** — the cheapest sole-trader entry; fine, but less ecommerce-strong than Xero.
+- **QuickBooks** — the cheapest sole-trader entry; fine, but fewer integrations than Xero.
 
 **Recommendation:** start on FreeAgent (free via Mettle/NatWest); switch to Xero when
 crossing the VAT threshold or making the first hire.
@@ -27,7 +27,8 @@ crossing the VAT threshold or making the first hire.
 2. Connect the bank feed to the accounting software.
 3. A simple chart of accounts; categorise transactions weekly, not yearly.
 4. Keep digital copies of every receipt and invoice — MTD requires digital records.
-5. Connect Shopify and Stripe so sales reconcile automatically.
+5. Connect your sales platform and payment processor (e.g. Shopify and Stripe) so sales
+   reconcile automatically.
 
 ## Discipline
 - Reconcile weekly — 15 minutes a week beats two lost days every January.

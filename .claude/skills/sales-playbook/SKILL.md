@@ -11,8 +11,8 @@ conversation is also evidence. This skill builds a repeatable process for the fi
 customers.
 
 ## First, know the motion
-- **Self-serve** (low price, B2C ecommerce) — the "sale" is the landing page, the product
-  page, and checkout. Optimise those; see the marketing skills.
+- **Self-serve** (low price, B2C — an online store or a SaaS sign-up) — the "sale" is the
+  landing page, the product or pricing page, and the checkout or sign-up. Optimise those; see the marketing skills.
 - **Founder-led** (higher price, B2B, a considered purchase) — direct conversations. The
   playbook below applies.
 

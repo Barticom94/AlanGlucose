@@ -13,11 +13,11 @@ wrong and every pound of marketing is wasted.
 Fill all nine blocks, and revisit them every phase:
 problem · customer segments · unique value proposition · solution · channels ·
 revenue streams · cost structure · key metrics · unfair advantage.
-Keep the current version in `state/product_context.md`; note major changes in `decisions_log.md`.
+Keep the current version in `state/product_context.md`; note major changes in `state/decisions_log.md`.
 
 ## The value proposition
 A sharp UVP names the customer, the problem, and the outcome — not the features.
-Template: *"For [beachhead persona] who [problem], {{VENTURE}} is a [category] that
+Template: *"For [beachhead persona] who [problem], {{VENTURE_NAME}} is a [category] that
 [key benefit]. Unlike [main alternative], we [the one real difference]."*
 
 ## Blue Ocean — the ERRC grid
@@ -32,7 +32,8 @@ business — is often the only power a bootstrap can hold early.
 
 ## Go-to-market — the first channel
 - Pick ONE channel for launch. Founders fail by spreading thin, not by going too deep.
-- It must be reachable on roughly £0 in month 1 (`CLAUDE.md`, rule 6).
+- It must be reachable within the founder's real month-1 budget (`CLAUDE.md`, rule 6 — usually
+  close to £0).
 - State the channel, the expected CAC, and the evidence for both (see `evidence-bar`).
 
 ## Output

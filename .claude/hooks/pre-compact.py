@@ -80,8 +80,7 @@ def main():
     except Exception:
         pass
 
-    msgs = recent_messages(transcript_path) if transcript_path else []
-    convo = "\n\n".join(f"**{r}:** {t[:600]}" for r, t in msgs) or "(transcript unavailable)"
+    convo = "Not stored in this file (it is git-tracked). The full transcript backup is in .claude/backups/, which is git-ignored."
     backup_line = f"`.claude/backups/{backup_name}`" if backup_ok else "(transcript copy failed)"
 
     handover = f"""# Handover — latest
@@ -98,7 +97,7 @@ Full transcript saved to: {backup_line}
 ## state/progress.md (snapshot)
 {read(STATE / 'progress.md') or '(empty)'}
 
-## Last messages before compaction
+## Recent conversation
 {convo}
 
 ## Next step

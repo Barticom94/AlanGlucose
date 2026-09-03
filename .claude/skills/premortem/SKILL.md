@@ -24,7 +24,7 @@ across themes:
 - Demand — no one actually wanted it.
 - Channel — could not reach customers affordably.
 - Unit economics — every sale lost money.
-- Execution — too slow; five hours a week was not enough.
+- Execution — too slow; the founder's real hours were not enough.
 - Competition — an incumbent crushed it, or it already existed.
 - Regulation — a UK rule made it unviable.
 - Founder — capacity, motivation, or the day-job conflict.

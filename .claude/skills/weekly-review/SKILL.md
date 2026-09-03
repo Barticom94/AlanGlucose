@@ -15,7 +15,7 @@ Read `state/active_context.md`, `progress.md`, `decisions_log.md`, and `risks.md
 2. What stalled, and the real reason.
 3. Progress against the current phase gate, quantified.
 4. Has any risk in `risks.md` materialised or grown?
-5. Founder-capacity check — did the ~5 hours go to the highest-leverage thing?
+5. Founder-capacity check — did the founder's available hours go to the highest-leverage thing?
 6. Set the single most important objective for next week.
 Update `state/progress.md` and `state/active_context.md`. If the venture has not moved
 toward its gate in 3 weeks, say so directly and ask why.

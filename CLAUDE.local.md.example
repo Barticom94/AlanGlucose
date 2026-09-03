@@ -5,13 +5,13 @@
 > Actual keys belong in environment variables.
 
 ## API keys — set as environment variables (do NOT paste values here)
-`.mcp.json` reads these. Set each via Windows Settings → System → Environment Variables, or
-your shell profile. Tick when done:
+`.mcp.json` reads these. Set each via Windows Settings → System → Environment Variables (then restart the Claude app so
+it can see them), or your shell profile on Mac/Linux. Tick when done:
 
 - [ ] `COMPANIES_HOUSE_API_KEY` — free, register at developer.company-information.service.gov.uk
 - [ ] `EXA_API_KEY` — exa.ai (free tier exists)
 - [ ] `FIRECRAWL_API_KEY` — firecrawl.dev
-- [ ] `GITHUB_PAT` — github.com → Settings → Developer settings → personal access token (scope: repo)
+- [ ] `GITHUB_PAT` — optional; only if you enable the GitHub MCP server (github.com → Settings → Developer settings → personal access token, scope: repo)
 
 ## My situation
 Employment status, hours a week for this venture, cash available to invest, risk tolerance,
@@ -20,7 +20,7 @@ other commitments. The brain uses this to calibrate recommendations — five hou
 
 ## Machine notes
 - Python: `py` runs the hooks in `.claude/hooks/`.
-- `uv` is needed for the `basic-memory` MCP (`uvx`). Install: `py -m pip install uv`.
+- `uv` is only needed if you enable the optional `basic-memory` MCP server.
 - This clone lives at: {{ABSOLUTE_PATH}}
 
 ## Personal scratch

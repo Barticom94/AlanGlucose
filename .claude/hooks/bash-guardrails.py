@@ -17,7 +17,7 @@ BLOCKED = [
     (r"\bgit\s+push\b[^\n]*(--force\b|-f\b)", "force push — can overwrite remote history"),
     (r"\bgit\s+reset\s+--hard\b", "git reset --hard — discards uncommitted work"),
     (r"\bgit\s+clean\s+-\w*f", "git clean -f — deletes untracked files"),
-    (r"\bgit\s+checkout\s+--\s*\.\s*$", "git checkout -- . — discards all local changes"),
+    (r"\bgit\s+checkout\s+--\s*\.(\s|$)", "git checkout -- . — discards all local changes"),
     (r"\bdd\b[^\n]*\bof=", "dd writing to a device"),
     (r"\bmkfs\b", "mkfs — formats a filesystem"),
     (r">\s*/dev/sd[a-z]", "writing directly to a disk device"),

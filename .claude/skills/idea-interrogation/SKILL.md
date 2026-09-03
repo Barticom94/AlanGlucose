@@ -34,13 +34,13 @@ Put these to the founder directly. Weak answers are findings.
 - **Willingness to pay:** "If I charged £29/month tomorrow, would you give me your card
   details right now? At what price would you?"
 - **Channel:** "Where would a customer first hear about this — and is that channel
-  reachable on £0 marketing in month 1?"
+  reachable within your real month-1 budget (intake section 5.2)?"
 - **Moat:** "If I had £500k and 12 months, what would I build to beat you?"
 - **Unit economics:** "What is the CAC? The gross margin? At what LTV/CAC does this work?"
 - **UK-specific:** "Does this trip GDPR/PECR? Need a VAT-registered supplier? Cross any
   regulator — FCA, MHRA, Ofcom, ICO?"
 - **Personal:** "Can you keep your day job while running this? What is the smallest test
-  that fits five hours a week?"
+  that fits the hours you actually have (intake section 5.1)?"
 
 ### 4. First-pass frameworks
 Fill a Lean Canvas v0 (use the `gtm-positioning` skill). State founder-market fit honestly.

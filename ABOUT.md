@@ -35,7 +35,7 @@ counteract that, deliberately:
 - **`state/`** — a memory bank of plain markdown, updated at every task boundary, so the
   thread survives long sessions and compaction.
 - **`.claude/skills/`** — 32 progressive-disclosure skills, from idea interrogation to
-  ecommerce operations.
+  day-to-day operations.
 - **`.claude/agents/`** — 14 subagents, used in builder→reviewer pairs.
 - **`.claude/hooks/`** — 4 Python hooks that back up context, restore it, log sessions, and
   block destructive commands.
@@ -48,14 +48,13 @@ Each phase has named deliverables and one hard gate. Phase 0 is a single week sp
 whether the idea has earned a Phase 1 at all.
 
 ## Who it is for
-A single, first-time founder in the UK, with an ecommerce background, running a venture
+A single, first-time founder in the UK, running a venture
 alongside a day job on limited hours and a near-zero starting budget. The tax, legal,
 funding, and fulfilment knowledge throughout is UK-specific.
 
 ## Getting started
-1. Copy `CLAUDE.local.md.example` to `CLAUDE.local.md` and set the API-key environment variables it lists.
-2. Run the `business-intake` skill (`/idea-intake`) — it hands you the intake framework,
-   probes your answers, and seeds every `state/` file and the `CLAUDE.md` placeholders.
-3. The brain hands off to `idea-interrogation`, which asks the hard questions.
+1. In the Claude Code desktop app, paste the bootstrap prompt from `README.md` (the "Starting a new venture" section) and give the venture a name.
+2. Open the new folder as a new session. The `start` skill onboards you automatically: setup, a briefing, the roadmap, then the idea intake.
+3. Answer the intake honestly. The brain seeds itself from it and hands off to `idea-interrogation`.
 
 Clone this folder once per venture. Built to the "Claude Brain" specification.

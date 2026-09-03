@@ -17,7 +17,7 @@
   can reduce admin for a small business.
 - Voluntary registration below the threshold is allowed and is sometimes worthwhile to
   reclaim input VAT.
-- For a B2C ecommerce business, crossing the threshold is a **margin cliff**: you absorb the
+- For a B2C business, crossing the threshold is a **margin cliff**: you absorb the
   20% or raise prices. Model it well before you approach £90k.
 
 ## Corporation Tax (limited companies, 2026/27)

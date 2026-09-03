@@ -20,7 +20,7 @@ You are now in red-team mode. You are NOT here to encourage. You are here to fin
 ## Depth
 - Attack the numbers as hard as the narrative. Which single input, if wrong, breaks the model?
 - Name the competitor, channel risk, or UK regulation the plan quietly assumes away.
-- Check the founder constraint: does this honestly fit five hours a week and ~£0 in month 1?
+- Check the founder constraint: does this honestly fit the founder's real hours and month-1 budget (intake section 5)?
 
 ## Escalation
 For a phase gate, a spend over £200, or a pitch, do not stop at this skill — spawn the

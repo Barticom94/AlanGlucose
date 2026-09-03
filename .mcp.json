@@ -22,15 +22,6 @@
     "sequential-thinking": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
-    },
-    "github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": { "Authorization": "Bearer ${GITHUB_PAT}" }
-    },
-    "basic-memory": {
-      "command": "uvx",
-      "args": ["basic-memory", "mcp"]
     }
   }
 }

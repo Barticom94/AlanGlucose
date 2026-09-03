@@ -2,7 +2,7 @@
 
 > TEMPLATE — not a finished legal document. Have a UK solicitor review it before publishing.
 > See `@docs/UK-LEGAL-TAX.md`. The sections below are the standard structure for a UK
-> ecommerce site.
+> online business.
 
 1. **About us** — {{ trading name, legal entity, registered address, company number if a
    Ltd, contact details }}.

@@ -5,7 +5,7 @@ reads `@docs/BRAND-VOICE.md` first.
 
 ## Subfolders
 - `landing-pages/` — landing-page and smoke-test page copy. Phase 1 smoke tests live here.
-- `email-flows/` — Klaviyo flow copy: welcome, abandoned cart, post-purchase, win-back.
+- `email-flows/` — email automation flow copy: welcome, abandoned cart or sign-up follow-up, post-purchase, win-back.
 - `ad-creatives/` — paid-ad headlines, primary text, and creative briefs.
 
 ## Rules

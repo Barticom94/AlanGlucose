@@ -78,7 +78,7 @@ the decision? For a gift, a household purchase, or a business sale, these are di
 
 **3.4 Acquisition gut-check.** Roughly, how would a customer first hear about you, and what
 might it cost to get one? Is that plausibly less than what a customer is worth to you over
-time? A rough instinct is fine — this is the maths that quietly kills most ecommerce ideas.
+time? A rough instinct is fine — this is the maths that quietly kills most business ideas.
 > {{ }}
 
 **3.5 Channels.** How will customers find you? List every channel — and mark any you already
@@ -109,6 +109,10 @@ for an early idea — leave it blank if so.
 > {{ }}
 
 ## 5. You, the founder
+
+**5.0 Who and where.** Your name (as you would like the brain to address you), and where in the UK
+you are based — region or nearest city. Regional funding and support depend on it.
+> {{ }}
 
 **5.1 Time.** Realistically, how many hours a week can you give this, and when?
 > {{ }}

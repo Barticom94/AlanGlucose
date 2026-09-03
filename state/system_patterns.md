@@ -9,7 +9,7 @@
 - `/clear` between unrelated tasks and between phases.
 
 ## Decision rules
-- Any spend over £200 → run `/premortem` first.
+- Any spend over £200, or over the founder's own threshold → run `/premortem` first.
 - Any phase gate → `devils-advocate` and `evidence-checker` subagents run before advancing.
 - Any financial model → `financial-stress-tester` reviews it in a fresh context.
 

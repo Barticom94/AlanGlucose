@@ -43,7 +43,9 @@ Then propagate it:
 - `state/financials.md` — every number the founder gave, each tagged `[ASSUMPTION — H/M/L]`.
 - `state/risks.md` — section 5's worry and the capstone (the riskiest assumption) become the opening risk register.
 - `state/system_patterns.md` — section 7's working preferences (cadence, challenge level, decision style).
-- `CLAUDE.md` — fill the `{{PLACEHOLDERS}}`: venture name, one-line description, current phase (0), gate criteria.
+- `CLAUDE.md` — fill the `{{PLACEHOLDERS}}`: venture name, one-line description, founder name and
+  region (from section 5.0), current phase (0), gate criteria. Also replace `{{VENTURE_NAME}}` and
+  `{{DATE}}` in every state file you seed.
 
 ### 4. Hand off
 Confirm the seeded picture with the founder, then hand to the `idea-interrogation` skill —

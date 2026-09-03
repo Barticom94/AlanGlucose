@@ -12,7 +12,7 @@ to meaningful traffic. For research, spawn the `seo-researcher` subagent.
 
 ## The three layers
 1. **Technical** — the site is crawlable, fast, mobile-first, and cleanly structured.
-   Shopify handles most of this; still check Core Web Vitals.
+   Most hosted platforms handle this; still check Core Web Vitals.
 2. **Content** — pages that answer real search intent better than the current top results.
 3. **Authority** — links and brand signals earned over time. Do not buy links.
 

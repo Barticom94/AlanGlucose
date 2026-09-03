@@ -15,15 +15,18 @@ manually with `/start`. Work through all five steps in order, then stop.
 Check the environment and report it plainly to the founder:
 - `py` (Python 3.x) runs the hooks; `node` / `npx` run the MCP servers; `git` is version control.
 - Which API-key environment variables are set: `COMPANIES_HOUSE_API_KEY`, `EXA_API_KEY`,
-  `FIRECRAWL_API_KEY`, `GITHUB_PAT`. Missing keys are fine — the brain's core works without
-  them; the matching MCP server simply stays offline until the key is set.
+  `FIRECRAWL_API_KEY`. Missing keys are fine — the brain's core works without them. The
+  matching MCP server will not connect and Claude Code may show a connection warning at
+  startup; that is expected until the key is set and the app restarted.
 
 Then put the two optional decisions to the founder, one at a time, with the impact of each:
-- **Global config.** "Shall I apply the anti-sycophancy defaults to *every* Claude Code
-  project on this machine? Impact: it copies `GLOBAL-CLAUDE.md.example` to `~/.claude/CLAUDE.md`
+- **Global config.** First check whether `~/.claude/CLAUDE.md` already exists — if it does, NEVER
+  overwrite it; show the founder the example and offer to append its honesty defaults instead.
+  Otherwise ask: "Shall I apply the anti-sycophancy defaults to *every* Claude Code project on
+  this machine? Impact: it copies `GLOBAL-CLAUDE.md.example` to `~/.claude/CLAUDE.md`
   and every Claude session everywhere gets blunter — not only this brain. Skip it and this
   brain still enforces anti-sycophancy on its own."
-- **MCP keys.** "Which of the four API keys do you have to hand? I'll note the rest as
+- **MCP keys.** "Which of the three API keys do you have to hand? I'll note the rest as
   pending so the brain knows which MCP servers are live."
 
 Record the decisions in `CLAUDE.local.md` and `state/tech_context.md`.
@@ -48,7 +51,7 @@ proves:
 - **Phase 0 — Idea** — interrogate the idea before spending anything. *Gate:* 10 interviews
   with strangers who have the problem.
 - **Phase 1 — Validation** — prove strangers will commit something real. *Gate:* 3 real
-  commitments (a deposit, a letter of intent, or a paid waitlist).
+  commitments (a deposit, a letter of intent, or a waitlist sign-up with card details).
 - **Phase 2 — MVP** — ship the smallest real thing people pay for. *Gate:* 10 paying
   customers and 7-day retention.
 - **Phase 3 — Traction** — find one acquisition channel that pays back. *Gate:* CAC < LTV/3

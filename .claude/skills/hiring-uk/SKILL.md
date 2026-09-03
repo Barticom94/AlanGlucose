@@ -30,7 +30,7 @@ bottleneck, not to feel like a "real" business.
 1. Register as an employer with HMRC; set up PAYE payroll.
 2. A written contract and a clear role. Right-to-work checks are mandatory.
 3. Auto-enrolment pension; employers' liability insurance.
-4. Budget the true cost: salary + roughly 13.8% employer NI + pension + tools + management time.
+4. Budget the true cost: salary + roughly 15% employer NI (rate from 6 April 2025 — verify on gov.uk) + pension + tools + management time.
 
 ## The honest framing
 A hire not backed by revenue shortens the runway and raises the stakes. Verify the maths,

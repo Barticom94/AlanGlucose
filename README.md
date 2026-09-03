@@ -54,8 +54,9 @@ end-to-end in Codex — tell the maintainer what breaks.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
 - **`.claude/settings.json`** — the `reviewing` output style and the destructive-command deny
   rules. No hooks required.
-- **`.claude/hooks/`** — 3 *optional* Python helpers (transcript backup before compaction,
-  session log, extra command guardrail), switched on per machine by the `start` skill.
+- **`.claude/hooks/`** — 4 *optional* Python helpers (transcript backup before compaction,
+  context restore after it, session log, extra command guardrail), switched on per machine
+  by the `start` skill. Nothing depends on them.
 - **`.claude/SYCOPHANCY.md`** — the full anti-flattery contract.
 - **`docs/`** — UK legal, tax, funding, and brand reference, loaded on demand.
 
@@ -90,7 +91,7 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 │   ├── SYCOPHANCY.md      Anti-sycophancy contract
 │   ├── agents/            14 subagents
 │   ├── skills/            27 core skills
-│   ├── hooks/             3 optional Python helpers
+│   ├── hooks/             4 optional Python helpers
 │   └── output-styles/     planning, building, reviewing, presenting
 ├── .agents/skills/        Generated mirror of the skills for Codex, Gemini CLI, Cursor
 ├── .codex/                Generated Codex subagents + MCP config

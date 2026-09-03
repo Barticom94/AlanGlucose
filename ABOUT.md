@@ -39,7 +39,7 @@ counteract that, deliberately:
 - **`packs/`** — four vertical packs (ecommerce, saas, services, physical), installed by the
   intake so no kind of business is privileged.
 - **`.claude/agents/`** — 14 subagents, used in builder→reviewer pairs.
-- **`.claude/settings.json`** — the deny rules that block destructive commands; three optional
+- **`.claude/settings.json`** — the deny rules that block destructive commands; four optional
   Python helpers in `.claude/hooks/` are switched on per machine.
 - **`docs/`** — UK-specific legal, tax, funding, and brand reference material.
 

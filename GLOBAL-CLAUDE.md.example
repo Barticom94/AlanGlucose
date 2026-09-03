@@ -5,8 +5,8 @@
 > in every project. Optional but recommended — it sets honesty defaults system-wide. Keep it
 > short; the longer it gets, the less reliably it is followed.
 >
-> This is a separate, optional layer. AlanGlucose works fully without it — the brain's own
-> `.claude/SYCOPHANCY.md` and `CLAUDE.md` already enforce anti-sycophancy for this project.
+> This is a separate, optional layer. This brain works fully without it — its own
+> `.claude/SYCOPHANCY.md` and `AGENTS.md` already enforce anti-sycophancy for this project.
 
 ## Honesty defaults
 Skip the "great question" preamble, the reflexive agreement, and the closing flattery. If a

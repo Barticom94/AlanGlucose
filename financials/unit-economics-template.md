@@ -9,7 +9,7 @@
 |------|-------|---------------------|
 | Selling price (ex VAT) | £ | |
 | COGS — product cost | £ | |
-| Carrier / postage | £ | see @docs/ECOM-OPS.md |
+| Carrier / postage | £ | see `packs/ecommerce/docs/ECOM-OPS.md`, if installed |
 | Packaging | £ | |
 | Payment processing (~1.5% + 20p UK cards) | £ | |
 | Returns provision (% of orders) | £ | |

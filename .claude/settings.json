@@ -1,50 +1,61 @@
 {
   "outputStyle": "reviewing",
   "permissions": {
+    "defaultMode": "acceptEdits",
     "allow": [
       "Bash(git status:*)",
       "Bash(git diff:*)",
       "Bash(git log:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote:*)",
+      "Bash(git config:*)",
+      "Bash(git --version)",
+      "Bash(python3 --version)",
+      "Bash(py --version)",
+      "Bash(node --version)",
+      "PowerShell(git status:*)",
+      "PowerShell(git diff:*)",
+      "PowerShell(git log:*)",
+      "PowerShell(git init:*)",
+      "PowerShell(git add:*)",
+      "PowerShell(git commit:*)",
+      "PowerShell(git remote:*)",
+      "PowerShell(git config:*)",
+      "PowerShell(git --version)",
+      "PowerShell(python3 --version)",
+      "PowerShell(py --version)",
+      "PowerShell(node --version)",
       "WebSearch",
       "WebFetch"
     ],
     "deny": [
-      "Bash(rm -rf:*)",
+      "Bash(rm:*)",
+      "Bash(sudo:*)",
       "Bash(git push --force:*)",
-      "Bash(git reset --hard:*)"
-    ]
-  },
-  "hooks": {
-    "SessionStart": [
-      {
-        "matcher": "startup|compact|clear",
-        "hooks": [
-          { "type": "command", "command": "py .claude/hooks/session-start.py" }
-        ]
-      }
-    ],
-    "PreCompact": [
-      {
-        "matcher": "auto|manual",
-        "hooks": [
-          { "type": "command", "command": "py .claude/hooks/pre-compact.py" }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          { "type": "command", "command": "py .claude/hooks/session-log.py" }
-        ]
-      }
-    ],
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          { "type": "command", "command": "py .claude/hooks/bash-guardrails.py" }
-        ]
-      }
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+      "Bash(git checkout .:*)",
+      "Bash(git checkout -- .:*)",
+      "Bash(git restore .:*)",
+      "Bash(dd:*)",
+      "Bash(mkfs:*)",
+      "Bash(chmod -R 777:*)",
+      "PowerShell(Remove-Item:*)",
+      "PowerShell(rm:*)",
+      "PowerShell(rd:*)",
+      "PowerShell(rmdir:*)",
+      "PowerShell(del:*)",
+      "PowerShell(Format-Volume:*)",
+      "PowerShell(git push --force:*)",
+      "PowerShell(git push -f:*)",
+      "PowerShell(git reset --hard:*)",
+      "PowerShell(git clean:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
     ]
   }
 }

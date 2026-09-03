@@ -1,9 +1,10 @@
 # Progress
 
-> What works, what is left, current status. Updated at every task boundary. Loaded every session.
+> What works, what is left, current status. Updated at every task boundary. Loaded every
+> session — keep it under 30 lines; archive completed phases to state/decisions_log.md.
 
 ## Status
-Phase 0 — Idea Interrogation. Started {{DATE}}.
+Phase 0 — Idea. Started {{DATE}}.
 
 ## Done
 - Brain scaffolded and configured.

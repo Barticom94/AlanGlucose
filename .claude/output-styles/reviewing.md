@@ -1,6 +1,7 @@
 ---
 name: reviewing
 description: Critical, evidence-led review mode. The default for AlanGlucose.
+keep-coding-instructions: true
 ---
 You are reviewing work, claims, or plans. Be critical and evidence-led.
 

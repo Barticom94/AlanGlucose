@@ -4,9 +4,10 @@
 > never leaves your machine. Keep secrets *by reference* here; never paste secret values.
 > Actual keys belong in environment variables.
 
-## API keys — set as environment variables (do NOT paste values here)
-`.mcp.json` reads these. Set each via Windows Settings → System → Environment Variables (then restart the Claude app so
-it can see them), or your shell profile on Mac/Linux. Tick when done:
+## API keys — optional; set as environment variables (do NOT paste values here)
+Only needed if you switch on the optional research tools (`.mcp.json`). Set each via Windows
+Settings → System → Environment Variables (then restart the Claude app so it can see them), or
+your shell profile on Mac/Linux. Tick when done:
 
 - [ ] `COMPANIES_HOUSE_API_KEY` — free, register at developer.company-information.service.gov.uk
 - [ ] `EXA_API_KEY` — exa.ai (free tier exists)
@@ -19,9 +20,10 @@ other commitments. The brain uses this to calibrate recommendations — five hou
 £500 is a different venture from twenty hours and £5k.
 
 ## Machine notes
-- Python: `py` runs the hooks in `.claude/hooks/`.
-- `uv` is only needed if you enable the optional `basic-memory` MCP server.
-- This clone lives at: {{ABSOLUTE_PATH}}
+- Python (optional): runs the three helper hooks in `.claude/hooks/` if `start` switched them on.
+- Node (optional): runs the research tools in `.mcp.json`.
+- `uv` is only needed for the optional `basic-memory` MCP server.
+- This folder lives at: {{ABSOLUTE_PATH}}
 
 ## Personal scratch
 Anything you want the brain to see but never commit — half-formed ideas, reminders, draft

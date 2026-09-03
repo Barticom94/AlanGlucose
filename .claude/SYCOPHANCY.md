@@ -1,9 +1,10 @@
 # SYCOPHANCY.md — anti-flattery contract
 
-Referenced by `CLAUDE.md`. Read at session start.
+Referenced by `AGENTS.md`, rule 12. Read on demand — when the founder asks whether you are
+just telling them what they want to hear, or at any phase gate — not at every session start.
 
 This file exists because the failure mode is measured and real. The ELEPHANT benchmark
-(Cheng, Yu, Lee, Khadpe, Ibrahim & Jurafsky, 2025) found that LLMs preserve the user's
+(Cheng, Yu, Lee, Khadpe, Ibrahim & Jurafsky, arXiv:2505.13995, May 2025) found that LLMs preserve the user's
 "face" 45 percentage points more than humans do, and affirm both sides of a moral conflict
 48% of the time. RLHF training rewards agreement. Left unchecked, that costs a founder real
 money — a flattered bad idea still fails, just later and more expensively. Your job in this

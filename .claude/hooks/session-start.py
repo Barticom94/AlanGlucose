@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""SessionStart hook: re-injects AlanGlucose context after startup, compact, or clear.
+"""Optional SessionStart hook (matcher: compact|clear): re-injects the handover after a compaction.
 
-Prints plain text to stdout, which Claude Code adds to the session context. The script
-fails silent (exit 0) on any error — a broken hook must never break a session.
+At normal startup nothing is needed — CLAUDE.md imports AGENTS.md and the two live state
+files. After a compaction this prints state/handover-latest.md (written by the PreCompact
+hook) plus a short git status, as a belt-and-braces restore. Fails silent (exit 0).
 """
 import json
 import subprocess
@@ -37,31 +38,17 @@ def main():
         data = json.loads(raw) if raw.strip() else {}
     except Exception:
         data = {}
-    source = data.get("source", "startup")
+    source = data.get("source", "")
+    if source not in ("compact", "clear"):
+        sys.exit(0)
 
-    out = [
-        "=== ALANGLUCOSE — SESSION CONTEXT ===",
-        f"(restored by the SessionStart hook; source: {source})",
-        "",
-        "--- state/active_context.md ---",
-        read(STATE / "active_context.md") or "(empty)",
-        "",
-        "--- state/progress.md ---",
-        read(STATE / "progress.md") or "(empty)",
-    ]
-
+    out = ["=== ALANGLUCOSE — CONTEXT RESTORED AFTER " + source.upper() + " ==="]
     handover = read(STATE / "handover-latest.md")
-    if handover and "no handover written yet" not in handover:
-        out += ["", "--- state/handover-latest.md (restored after compaction) ---", handover]
-
-    out += [
-        "",
-        "--- git status ---",
-        git_status(),
-        "",
-        "Now read CLAUDE.md and .claude/SYCOPHANCY.md. Lead with the critique, not encouragement.",
-        "=== END SESSION CONTEXT ===",
-    ]
+    if handover:
+        out += ["", handover]
+    out += ["", "--- git status ---", git_status(),
+            "", "Re-read AGENTS.md and state/active_context.md before continuing.",
+            "=== END ==="]
     print("\n".join(out))
     sys.exit(0)
 

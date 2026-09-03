@@ -1,10 +1,11 @@
 # Active Context
 
 > The single most important state file. Loaded every session. Updated at every task
-> boundary. If this file is stale, the brain is working blind.
+> boundary. If this file is stale, the brain is working blind. Keep it under 30 lines —
+> move older "recent changes" into state/decisions_log.md or state/progress.md.
 
 ## Current phase
-Phase 0 — Idea Interrogation
+Phase 0 — Idea
 
 ## Current focus
 {{ The one thing being worked on right now. One line. }}

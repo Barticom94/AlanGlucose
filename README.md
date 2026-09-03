@@ -1,112 +1,118 @@
-# AlanGlucose — a Claude Code template for evaluating and building a business
+# AlanGlucose — a brain for evaluating and building a business
 
-A per-venture "brain": a structured Claude Code workspace that interrogates a business
-idea hard, validates it with real evidence, then helps build it — phase by phase, with
-anti-sycophancy enforced and context that survives long sessions.
+A per-venture "brain": a structured AI workspace that interrogates a business idea hard,
+validates it with real evidence from real people, then helps build it — one phase at a time,
+with anti-sycophancy enforced and context that survives long sessions.
 
-Clone this folder once per venture. Built for a single UK founder.
+Built for a single UK founder. One folder per venture. Works in Claude Code (the desktop app
+or the terminal) and in other AI harnesses that read `AGENTS.md`, such as Codex.
 
-## Starting a new venture
+## Start a new venture — no terminal needed
 
-In the Claude Code desktop app, paste this prompt into any session:
+You need the Claude Code app (desktop) with a Claude subscription. Nothing else.
+
+1. Download the template: [main.zip](https://github.com/Barticom94/AlanGlucose/archive/refs/heads/main.zip)
+2. Unzip it properly — on Windows right-click → *Extract All…*; on a Mac double-click it.
+   Rename the unzipped folder (`AlanGlucose-main`) to your venture's name and put it
+   somewhere sensible, like Documents.
+3. Open the Claude Code app, start a new session, and choose that folder as the project.
+   The app asks whether you trust the folder — say yes. It will also ask permission for a
+   few small actions in the first minute or two; click Allow. Nothing leaves your computer.
+4. Say hello.
+
+The brain takes it from there: a quiet setup, a short briefing, the roadmap, then it starts
+asking about your idea — one question at a time, "I don't know" always allowed. It offers
+one optional helper if your computer has Python; saying no breaks nothing. Research tools
+(free UK company data, web search) can be added any later day by saying "set up research tools".
+
+### Already use Claude Code or git?
+Either clone it — `git clone https://github.com/Barticom94/AlanGlucose.git "<venture-name>"` —
+then open the folder as a new session; the brain detaches it from the template itself. Or
+paste this into any Claude Code session:
 
 ```
-Bootstrap a new AlanGlucose venture brain:
-1. Ask me for a short, folder-safe venture name.
-2. Clone the template into a new folder with that name:
-   git clone https://github.com/Barticom94/AlanGlucose.git "<venture-name>"
-3. Detach it from the template so it is its own repo: inside the new folder run `git remote remove origin`. (A clean history is optional and can be done later.)
-4. Inside the new folder, copy CLAUDE.local.md.example to CLAUDE.local.md.
-5. Open the new folder in File Explorer, and copy its full absolute path to the clipboard.
-6. Show me the path, and tell me to open that folder as a new session in the Claude Code
-   desktop app. Do not start the intake in this window.
+Set up a new AlanGlucose venture brain: ask me for a short, folder-safe venture name; run
+git clone https://github.com/Barticom94/AlanGlucose.git "<name>"; then show me the new
+folder's full path and tell me to open it as a new session. Do nothing else in this window.
 ```
 
-Then, in the desktop app, start a new session with that folder as the Project folder — its
-path is already on your clipboard, so just paste it. The brain onboards you automatically
-from there: it finishes setup, briefs you, shows the roadmap, and runs the idea intake. The
-"First-time setup" and "Starter sequence" sections below are reference; the bootstrap and
-the `start` skill do them for you.
+### Using it with Codex or another harness
+`AGENTS.md` is the contract (Claude Code imports it from `CLAUDE.md`). Skills are mirrored in
+`.agents/skills/`, subagents in `.codex/agents/`, and MCP servers in `.codex/config.toml`
+(fill in the keys). Open the folder in your harness and say hello. Hooks and the `reviewing`
+output style are Claude Code features; everything else is plain files. Not yet tested
+end-to-end in Codex — tell the maintainer what breaks.
 
 ## How it works
 
-- **`CLAUDE.md`** — the behavioural contract Claude reloads every session and after compaction.
-- **`state/`** — the memory bank: hand-maintained markdown, updated at every task boundary.
-- **`.claude/skills/`** — 32 progressive-disclosure skills, from idea interrogation to operations.
+- **`AGENTS.md`** — the behavioural contract: phases, gates, and the operating rules.
+- **`CLAUDE.md`** — Claude Code's entry point; imports `AGENTS.md` and the two live state files.
+- **`state/`** — the memory bank: plain markdown, updated at every task boundary.
+- **`.claude/skills/`** — 27 core skills, vertical-neutral, from idea interrogation to UK tax.
+- **`packs/`** — vertical packs (`ecommerce`, `saas`, `services`, `physical`) installed by
+  the intake. More than one can apply.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
-- **`.claude/hooks/`** — 4 Python hooks: back up context, restore it, log sessions, block destructive commands.
-- **`.claude/SYCOPHANCY.md`** — the anti-flattery contract.
-- **`docs/`** — long-form UK reference material, loaded on demand.
+- **`.claude/settings.json`** — the `reviewing` output style and the destructive-command deny
+  rules. No hooks required.
+- **`.claude/hooks/`** — 3 *optional* Python helpers (transcript backup before compaction,
+  session log, extra command guardrail), switched on per machine by the `start` skill.
+- **`.claude/SYCOPHANCY.md`** — the full anti-flattery contract.
+- **`docs/`** — UK legal, tax, funding, and brand reference, loaded on demand.
 
 ## Phases
 
-`0 Idea Interrogation → 1 Validation → 2 MVP → 3 Early Traction → 4 Growth → 5 Scale/Fundraise`
+`0 Idea → 1 Validation → 2 MVP → 3 Traction → 4 Growth → 5 Scale`
 
-Each phase has a hard gate (see `CLAUDE.md`). The brain refuses later-phase work until the
-current gate is met — that is a feature, not a bug.
-
-## First-time setup
-
-1. (Once, ever) Copy `GLOBAL-CLAUDE.md.example` to `~/.claude/CLAUDE.md` — optional but
-   recommended; it sets anti-sycophancy defaults for every Claude Code session.
-2. Read `BOOTSTRAP.md` — the phase model, the gates, and the order to do things in.
-3. Copy `CLAUDE.local.md.example` to `CLAUDE.local.md` and set the API-key environment
-   variables it lists.
-4. Review `.mcp.json` and verify each MCP install command — the ecosystem moves fast.
-5. Confirm hooks: `.claude/settings.json` invokes `py .claude/hooks/*.py` (Python 3.13).
-
-## Starter sequence for a new venture
-
-1. Run `/idea-intake` → the `business-intake` skill hands you the intake framework. Fill it
-   in, paste it back; the brain probes the gaps and seeds every `state/` file — including the
-   `CLAUDE.md` placeholders and the phase.
-2. The brain hands off to `idea-interrogation` — Disciplined Entrepreneurship steps 1–3 and
-   Mom Test preparation.
-3. Run `/premortem` → capture initial failure modes into `state/risks.md`.
-4. Commit `state/` to git — the first checkpoint.
-5. Open the Phase 0 task: interview 10 strangers about the problem.
-6. Keep sessions ≤ 2 hours; run `/session-handoff` at the end of each.
-7. After ~1 week, run `/reality-check` and the Phase 0 gate. Advance, or revise the thesis.
+Each phase has one hard gate (in `AGENTS.md`). The brain refuses later-phase work until the
+current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the operating manual.
 
 ## Conventions
 
-- Skills are model-invoked by their `description`; several are user-invocable as slash commands.
-- The command map ("When the founder says…") lives in `CLAUDE.md`.
+- Skills are chosen by their `description`; in Claude Code they are also `/slash-commands`.
+- The command map ("When the founder says…") lives in `AGENTS.md`.
 - All numbers live in `state/financials.md` — one source of truth.
-- UK tax/legal/funding figures are time-sensitive (2026 edition); verify against gov.uk
+- UK tax, legal, and funding figures are time-sensitive (2026 edition); verify on gov.uk
   before relying on any number in a real decision.
 
 ## Directory map
 
 ```
 .
-├── CLAUDE.md                 Behavioural contract
+├── AGENTS.md                 The contract — read by every harness
+├── CLAUDE.md                 Claude Code entry point (imports AGENTS.md + state)
 ├── ABOUT.md                  What AlanGlucose is, and why
-├── BOOTSTRAP.md              The operating manual — read this first
-├── CLAUDE.local.md.example   Personal config — copy to CLAUDE.local.md
-├── GLOBAL-CLAUDE.md.example  Optional global config for ~/.claude/
-├── .mcp.json                 MCP server registry
-├── README.md
+├── BOOTSTRAP.md              The operating manual
+├── CLAUDE.local.md.example   Personal notes template — start copies it
+├── GLOBAL-CLAUDE.md.example  Optional honesty defaults for every project on a machine
+├── .mcp.json.example         Optional research tools — start enables what it can
 ├── .claude/
-│   ├── settings.json      Hooks, permissions, output style
+│   ├── settings.json      Output style + deny rules (no hooks)
 │   ├── SYCOPHANCY.md      Anti-sycophancy contract
 │   ├── agents/            14 subagents
-│   ├── skills/            32 skills (each a dir with SKILL.md)
-│   ├── hooks/             session-start, pre-compact, session-log, bash-guardrails
-│   ├── output-styles/     planning, building, reviewing, presenting
-│   └── backups/           PreCompact transcript snapshots
-├── state/                 The memory bank (12 files)
-├── docs/                  UK-LEGAL-TAX, UK-FUNDING, ECOM-OPS, BRAND-VOICE, sops/
-├── research/              customer-interviews, competitor-profiles, market-reports, sector-notes
+│   ├── skills/            27 core skills
+│   ├── hooks/             3 optional Python helpers
+│   └── output-styles/     planning, building, reviewing, presenting
+├── .agents/skills/        Generated mirror of the skills for Codex, Gemini CLI, Cursor
+├── .codex/                Generated Codex subagents + MCP config
+├── packs/                 ecommerce, saas, services, physical
+├── state/                 The memory bank
+├── docs/                  UK-LEGAL-TAX, UK-FUNDING, BRAND-VOICE, sops/
+├── research/              customer-interviews, competitor-profiles, market-reports
 ├── financials/            unit-economics & cashflow templates, scenarios/
 ├── marketing/             landing-pages, email-flows, ad-creatives
 ├── legal/                 T&Cs, privacy, returns, supplier-contracts/
-└── tasks/                 Markdown to-do tracking
+├── tasks/                 Markdown to-do tracking
+└── tools/                 build-adapters.py — regenerates .agents/ and .codex/
 ```
+
+## For the template maintainer (not for founders)
+
+After editing anything under `.claude/skills/`, `.claude/agents/`, or `.mcp.json.example`,
+run `python tools/build-adapters.py` and commit the regenerated `.agents/` and `.codex/`
+folders. CI fails if they are stale. Founders using a venture never need this.
 
 ## Caveats
 
-Built to the "Claude Brain" specification. Claude Code changes fast — verify MCP commands
-and hook behaviour before depending on them. Legal and tax content is information, not
-advice; engage a UK chartered accountant for SEIS, VAT, and company-structure decisions.
-The brain does not replace talking to real customers.
+AI harnesses change fast — verify hook and MCP behaviour before depending on them. Legal and
+tax content is information, not advice; engage a UK chartered accountant for SEIS, VAT, and
+company-structure decisions. The brain does not replace talking to real customers.

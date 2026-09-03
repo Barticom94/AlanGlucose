@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""PreToolUse hook (matcher: Bash): blocks destructive shell commands.
+"""PreToolUse hook (matcher: Bash|PowerShell): blocks destructive shell commands.
+
+Optional, and a second layer: the first layer is permissions.deny in .claude/settings.json,
+which needs no Python. This adds regex precision on top when the hook is switched on.
 
 On a destructive command it writes a reason to stderr and exits 2, which tells Claude
 Code to block the call and feed the reason back to Claude. Claude must then ask the
@@ -35,7 +38,7 @@ def main():
     except Exception:
         sys.exit(0)  # Cannot parse input — do not block.
 
-    if data.get("tool_name") != "Bash":
+    if data.get("tool_name") not in ("Bash", "PowerShell"):
         sys.exit(0)
 
     command = (data.get("tool_input") or {}).get("command", "") or ""

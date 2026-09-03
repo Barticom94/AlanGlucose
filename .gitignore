@@ -13,6 +13,13 @@ secrets/
 # First-run onboarding marker — per-clone, written by the start skill
 .claude/.initialised
 
+# Per-machine Claude Code settings (optional hooks, written by the start skill)
+.claude/settings.local.json
+
+# Session artefacts written by the optional hooks — never part of the template
+state/handover-latest.md
+state/session-log.md
+
 # OS / editor
 .DS_Store
 Thumbs.db

@@ -1,7 +1,8 @@
 # Returns & Refunds Policy — {{VENTURE_NAME}}
 
 > TEMPLATE — not a finished legal document. It must comply with UK consumer law — see the
-> `ops-returns` skill and `@docs/UK-LEGAL-TAX.md`. Have a UK solicitor review before publishing.
+> `ops-returns` skill (in the physical pack, if installed) and `@docs/UK-LEGAL-TAX.md`. Have
+> a UK solicitor review before publishing.
 
 ## Your right to cancel (Consumer Contracts Regulations 2013)
 You may cancel within **14 days** of receiving the goods, for any reason. {{ State how the

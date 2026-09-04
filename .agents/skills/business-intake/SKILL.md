@@ -27,7 +27,10 @@ rather do it in their own time.
 ## 1. The short intake — about 13 questions, 10–15 minutes
 Ask these in order, one per message — never two in a turn, however related, however quick the
 founder seems. Two questions in one message is a defect, not efficiency: ask the first, wait,
-then ask the second. Follow up at most once per answer, and only on a gap.
+then ask the second. Follow up at most once per answer, and only on a gap. A question is
+closed only by the founder's own words: never mark one answered because you can infer it —
+"that also closes 2.4, they cope by word of mouth" is invented evidence however obvious the
+inference. Inferred, it stays open and still gets asked.
 The numbers refer to the full framework.
 
 1. **5.0** Their name, and where in the UK they are (region or nearest city).

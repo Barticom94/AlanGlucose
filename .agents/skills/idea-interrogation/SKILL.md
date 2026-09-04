@@ -55,9 +55,12 @@ Fill a Lean Canvas v0 (use the `gtm-positioning` skill). State founder-market fi
 Hand off to the `premortem` skill for an initial failure-mode list.
 
 ### 6. Position
-Spawn the `devils-advocate` subagent and wait for its findings — the position is not final,
-and is not written to any state file, until that review has run. Quote its three strongest
-findings before your position; a review with no quoted findings did not happen. Then write your position to
+Spawn the `devils-advocate` and `evidence-checker` subagents and wait for both — the position
+is not final, and is not written to any state file, until both reviews have run.
+`evidence-checker` audits every citation made this session: any citation that is not a URL
+fetched this session is downgraded to `[ASSUMPTION — unverified]` before the position is
+written. Quote each subagent's strongest findings before your position; a review with no
+quoted findings did not happen. Then write your position to
 `state/project_brief.md`:
 **in** (a defended thesis with the beachhead identified); **in, if** (at most three
 conditions, each with its fix or its test); or **not in** (a kill memo naming the weak

@@ -62,7 +62,9 @@ is not final, and is not written to any state file, until both reviews have run.
 `evidence-checker` audits every citation made this session: any citation that is not a URL
 fetched this session is downgraded to `[ASSUMPTION — unverified]` before the position is
 written. Quote each subagent's strongest findings before your position; a review with no
-quoted findings did not happen. Then write your position to
+quoted findings did not happen. Give your position in the same message as those findings —
+never end on quoted reviews, a risk list, or another question and wait to be asked "so are
+you in?". Once both reviews have run, the verdict is owed unasked. Then write it to
 `state/project_brief.md`:
 **in** (a defended thesis with the beachhead identified); **in, if** (at most three
 conditions, each with its fix or its test); or **not in** (a kill memo naming the weak

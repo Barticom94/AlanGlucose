@@ -468,6 +468,16 @@ def list_files(root: Path) -> dict:
     return {p.relative_to(root).as_posix(): p for p in root.rglob("*") if p.is_file()}
 
 
+_CRLF = bytes((13, 10))
+_LF = bytes((10,))
+
+
+def _norm(path: Path) -> bytes:
+    # Fold CRLF to LF before comparing: a Windows checkout with core.autocrlf=true
+    # rewrites mirrored files with CRLF while git stores them LF. Not drift.
+    return path.read_bytes().replace(_CRLF, _LF)
+
+
 def diff_dir(scratch_dir: Path, repo_dir: Path, label: str) -> list[str]:
     scratch_files = list_files(scratch_dir)
     repo_files = list_files(repo_dir)
@@ -477,7 +487,7 @@ def diff_dir(scratch_dir: Path, repo_dir: Path, label: str) -> list[str]:
     for rel in sorted(set(repo_files) - set(scratch_files)):
         diffs.append(f"stale:   {label}/{rel}")
     for rel in sorted(set(scratch_files) & set(repo_files)):
-        if scratch_files[rel].read_bytes() != repo_files[rel].read_bytes():
+        if _norm(scratch_files[rel]) != _norm(repo_files[rel]):
             diffs.append(f"changed: {label}/{rel}")
     return diffs
 
@@ -485,7 +495,7 @@ def diff_dir(scratch_dir: Path, repo_dir: Path, label: str) -> list[str]:
 def diff_file(scratch_file: Path, repo_file: Path, label: str) -> list[str]:
     if not repo_file.exists():
         return [f"missing: {label}"]
-    if scratch_file.read_bytes() != repo_file.read_bytes():
+    if _norm(scratch_file) != _norm(repo_file):
         return [f"changed: {label}"]
     return []
 

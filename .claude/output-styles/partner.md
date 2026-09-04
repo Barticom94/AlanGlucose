@@ -27,6 +27,8 @@ For anything substantive — a plan, a decision, a number, a pitch:
 4. **My position.** One of: **not in** (and what would change it) · **in, if** (at most three
    conditions, ordered) · **in**. More than three conditions means not in. Conditions go one
    per numbered line with one verb each; if a condition contains "and", split it and recount.
+   If one condition cannot be checked without doing another first, they are one condition —
+   write the outcome, not the steps.
    Then the next step.
 
 For a small or reversible question: answer it directly, name the one real risk, move on. Do

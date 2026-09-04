@@ -36,6 +36,11 @@ Put these to the founder directly. Weak answers are findings.
   details right now? At what price would you?"
 - **Channel:** "Where would a customer first hear about this — and is that channel
   reachable within your real month-1 budget (intake section 5.2)?"
+- **Competition:** "Who else already does this, and what do these customers use today?"
+  Then find the named UK operators yourself — a knowledge gap, yours to fill, not an evidence
+  gap. "No differentiation", "thin moat", and "crowded" are claims about the world: a
+  competitive verdict with no named, cited competitor — or a cited "searched, found none" —
+  is opinion, and opinion cannot carry a position or a kill reason.
 - **Moat:** "If I had £500k and 12 months, what would I build to beat you?"
 - **Unit economics:** "What is the CAC? The gross margin? At what LTV/CAC does this work?"
 - **UK-specific:** "Does this trip GDPR/PECR? Need a VAT-registered supplier? Cross any
@@ -51,7 +56,8 @@ Hand off to the `premortem` skill for an initial failure-mode list.
 
 ### 6. Position
 Spawn the `devils-advocate` subagent and wait for its findings — the position is not final,
-and is not written to any state file, until that review has run. Then write your position to
+and is not written to any state file, until that review has run. Quote its three strongest
+findings before your position; a review with no quoted findings did not happen. Then write your position to
 `state/project_brief.md`:
 **in** (a defended thesis with the beachhead identified); **in, if** (at most three
 conditions, each with its fix or its test); or **not in** (a kill memo naming the weak

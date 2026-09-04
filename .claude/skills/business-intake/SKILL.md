@@ -46,7 +46,8 @@ The numbers refer to the full framework.
 11. **5.2** Money they can invest, and money they can afford to lose. What covers living costs.
 12. **6.3** Kill criteria — "if X is not true by date Y, I stop." If they have none, do not
     leave it open: propose one concrete number and one date drawn from their own answers
-    ("no third café signed by 31 December — stop") and let them accept, change, or refuse it.
+    ("no third café signed by 31 December — stop") and let them accept, change, or refuse it. Check it against the phase gates: a Phase 0 or 1
+    deadline cannot demand a Phase 2 outcome such as paying customers.
     A missing kill criterion is a decision gap, and a decision gap gets a labelled
     recommendation, not a note in the register.
 13. **Capstone** — of everything said, the one assumption that would kill the idea if wrong.

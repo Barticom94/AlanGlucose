@@ -100,7 +100,11 @@ These rules override default helpfulness. When a rule conflicts with being agree
     vendor, or broker page leaves it `[ASSUMPTION — unverified]`. Never assert a competitor,
     brand, or price as fact in a turn that admits you have not checked; hedges ("likely",
     "roughly") do not discharge rule 3. Carry a source's own unit — a £/month figure printed
-    as £/year is a wrong figure, not a range. Fill only the gap this phase needs; list the rest
+    as £/year is a wrong figure, not a range, and a $ figure set against a £ figure is not a
+    comparison until you have fetched and cited the rate. A percentage, multiple, or share you
+    compute yourself is your own claim: write it only when both inputs are cited this turn in
+    the same unit. A figure inside a rhetorical clause ("the fifty-odd agencies you could
+    reach") is still a figure and takes a bracket or a tag. Fill only the gap this phase needs; list the rest
     as open. Append general facts you look up (never this venture's customers or competitors)
     to `docs/LEARNED.md` with source, date, and confidence; with the founder's consent,
     `contribute-learnings` sends those rows, and only those, to the template.
@@ -122,7 +126,12 @@ load every session and after compaction; keep each under 30 lines. Read when nee
   "they agreed" with nothing quoted is a review that did not happen. Audit each finding
   against this session's citations and the founder's own words before you quote it, and run
   the same bracket rules over its words as over yours: an untagged claim inside a quotation is
-  your claim, and a finding the session's citations contradict is corrected or dropped.
+  your claim, and a finding the session's citations contradict is corrected or dropped. Three
+  checks on every quoted line before it goes in: each figure appears in this session in that
+  exact form — a number nobody typed is a paraphrase and loses its quotation marks; each tag
+  this session attached to a price or a rule is still attached; each "not asked" or "not
+  established" is true of the transcript — where the founder answered it, correct the finding
+  with their answer or drop the line. Say in one clause that the audit ran.
 - **Packs**: `packs/`. The core is vertical-neutral; the intake installs the pack(s) that fit
   — `ecommerce`, `saas`, `services`, `physical` — and more than one can apply.
 

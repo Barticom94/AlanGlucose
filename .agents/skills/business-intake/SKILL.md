@@ -44,7 +44,11 @@ The numbers refer to the full framework.
 9. **3.1 + 3.2** How it makes money, and the price — and what the price is anchored to.
 10. **5.1** Hours a week, realistically, and when.
 11. **5.2** Money they can invest, and money they can afford to lose. What covers living costs.
-12. **6.3** Kill criteria — "if X is not true by date Y, I stop."
+12. **6.3** Kill criteria — "if X is not true by date Y, I stop." If they have none, do not
+    leave it open: propose one concrete number and one date drawn from their own answers
+    ("no third café signed by 31 December — stop") and let them accept, change, or refuse it.
+    A missing kill criterion is a decision gap, and a decision gap gets a labelled
+    recommendation, not a note in the register.
 13. **Capstone** — of everything said, the one assumption that would kill the idea if wrong.
 
 Then say: "That is enough to start. There are about twenty more questions — competition,

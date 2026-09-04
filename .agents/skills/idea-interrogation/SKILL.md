@@ -50,10 +50,14 @@ Fill a Lean Canvas v0 (use the `gtm-positioning` skill). State founder-market fi
 Hand off to the `premortem` skill for an initial failure-mode list.
 
 ### 6. Position
-Spawn the `devils-advocate` subagent. Then write your position to `state/project_brief.md`:
+Spawn the `devils-advocate` subagent and wait for its findings — the position is not final,
+and is not written to any state file, until that review has run. Then write your position to
+`state/project_brief.md`:
 **in** (a defended thesis with the beachhead identified); **in, if** (at most three
 conditions, each with its fix or its test); or **not in** (a kill memo naming the weak
 answer, and what would change your mind). A kill is a good outcome — it cost a week, not a year.
 
 ## Gate to Phase 1
 The founder commits to interview 10 strangers — not friends, not family — who have the problem.
+Hand straight to the `customer-discovery` skill for the interview script and, for a founder
+with no contacts, a cold-approach list. Do not end on "go and interview ten strangers" alone.

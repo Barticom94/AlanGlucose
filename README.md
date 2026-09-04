@@ -40,7 +40,7 @@ folder's full path and tell me to open it as a new session. Do nothing else in t
 ### Using it with Codex or another harness
 `AGENTS.md` is the contract (Claude Code imports it from `CLAUDE.md`). Skills are mirrored in
 `.agents/skills/`, subagents in `.codex/agents/`, and MCP servers in `.codex/config.toml`
-(fill in the keys). Open the folder in your harness and say hello. Hooks and the `reviewing`
+(fill in the keys). Open the folder in your harness and say hello. Hooks and the `partner`
 output style are Claude Code features; everything else is plain files. Not yet tested
 end-to-end in Codex — tell the maintainer what breaks.
 
@@ -53,8 +53,8 @@ end-to-end in Codex — tell the maintainer what breaks.
 - **`packs/`** — vertical packs (`ecommerce`, `saas`, `services`, `physical`) installed by
   the intake. More than one can apply.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
-- **`.claude/settings.json`** — the `reviewing` output style and the destructive-command deny
-  rules. No hooks required.
+- **`.claude/settings.json`** — the `partner` output style (diligence first, then fill the
+  gaps) and the destructive-command deny rules. No hooks required.
 - **`.claude/hooks/`** — 4 *optional* Python helpers (transcript backup before compaction,
   context restore after it, session log, extra command guardrail), switched on per machine
   by the `start` skill. Nothing depends on them.
@@ -93,7 +93,7 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 │   ├── agents/            14 subagents
 │   ├── skills/            27 core skills
 │   ├── hooks/             4 optional Python helpers
-│   └── output-styles/     planning, building, reviewing, presenting
+│   └── output-styles/     partner (default), reviewing, planning, building, presenting
 ├── .agents/skills/        Generated mirror of the skills for Codex, Gemini CLI, Cursor
 ├── .codex/                Generated Codex subagents + MCP config
 ├── packs/                 ecommerce, saas, services, physical

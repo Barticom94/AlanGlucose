@@ -13,5 +13,5 @@ every session start and after every compaction, so no hook is needed to restore 
 - Optional Python hooks (`.claude/hooks/`: transcript backup before compaction, context
   restore after it, session log, extra command guardrail) are wired per machine in the git-ignored
   `.claude/settings.local.json` by the `start` skill, only when Python is present.
-- Output style `reviewing` is set in `.claude/settings.json`: critique first, always.
+- Output style `partner` is set in `.claude/settings.json`: diligence first, then fill the gaps.
 - `CLAUDE.local.md` (git-ignored) holds the founder's personal notes; `start` creates it.

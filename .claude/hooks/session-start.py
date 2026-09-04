@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Optional SessionStart hook (matcher: compact|clear): re-injects the handover after a compaction.
+"""Optional SessionStart hook (matcher: compact): re-injects the handover after a compaction.
 
 At normal startup nothing is needed — CLAUDE.md imports AGENTS.md and the two live state
 files. After a compaction this prints state/handover-latest.md (written by the PreCompact
@@ -39,7 +39,7 @@ def main():
     except Exception:
         data = {}
     source = data.get("source", "")
-    if source not in ("compact", "clear"):
+    if source != "compact":
         sys.exit(0)
 
     out = ["=== ALANGLUCOSE — CONTEXT RESTORED AFTER " + source.upper() + " ==="]
@@ -47,7 +47,8 @@ def main():
     if handover:
         out += ["", handover]
     out += ["", "--- git status ---", git_status(),
-            "", "Re-read AGENTS.md and state/active_context.md before continuing.",
+            "", "AGENTS.md, state/active_context.md and state/progress.md are re-injected from disk",
+            "with CLAUDE.md and outrank the compaction summary above.",
             "=== END ==="]
     print("\n".join(out))
     sys.exit(0)

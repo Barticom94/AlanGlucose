@@ -1,5 +1,15 @@
 {
   "outputStyle": "partner",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          { "type": "command", "command": "cd \"${CLAUDE_PROJECT_DIR}\"; cat .claude/hooks/after-compact.md" }
+        ]
+      }
+    ]
+  },
   "permissions": {
     "defaultMode": "acceptEdits",
     "allow": [
@@ -12,6 +22,7 @@
       "Bash(git remote:*)",
       "Bash(git config:*)",
       "Bash(git --version)",
+      "Bash(xcode-select --print-path)",
       "Bash(python3 --version)",
       "Bash(py --version)",
       "Bash(node --version)",

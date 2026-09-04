@@ -14,21 +14,28 @@ founder to run a command you can run yourself; never ask them to install anythin
 Silently, with your file and shell tools, find out:
 - Which harness you are running in (Claude Code, Codex, or something else — from your own
   tool names and surroundings). Steps marked *Claude Code only* are skipped elsewhere.
-- Whether this folder is a git repository (`.git/` exists) and whether `git` is installed.
-- Whether Python is available — run `python3 --version`, and on Windows also `py --version`,
-  from the same shell tool the hooks will use. Note the exact launcher that worked; that is
-  the one to write into the hooks block below. Whether Node is available (`node --version`).
-- Which of `COMPANIES_HOUSE_API_KEY`, `EXA_API_KEY`, `FIRECRAWL_API_KEY` are set.
-- Whether `~/.claude/CLAUDE.md` exists, and whether `CLAUDE.local.md` exists in this folder.
+- Whether this folder is a git repository (`.git/` exists) and whether `git` is usable. On
+  macOS run `xcode-select --print-path` first: if that fails, Apple's Command Line Tools are
+  not installed, which makes `git` and `python3` install-prompt stubs — treat both as absent
+  and do not run them (running either opens an OS dialog offering a large download).
+  Otherwise run `git --version`.
+- Whether Python is available — `python3 --version` (skipped when the check above failed on
+  macOS), and on Windows also `py --version`, from the same shell tool the hooks will use.
+  Note the exact launcher that worked; that is the one to write into the hooks block below.
+- Whether `CLAUDE.local.md` exists in this folder.
 
-Do not report this list to the founder. It only shapes what you offer in Step 2.
+Use only `ls`, `xcode-select --print-path`, and the version commands named here — anything
+else prompts the founder before you have said hello. Node and API keys are checked in the
+"Later" section, not now. Do not report this list to the founder. It only shapes what you
+offer in Step 2.
 
 ## Step 1 — Say hello
 Five sentences at most: you are their venture brain; in the next few minutes you will do a
 short setup, give a briefing, show the road ahead, and then start asking about their idea;
-the app will ask their permission a few times in the next minute or two — click Allow each
-time, nothing leaves their computer; "I don't know" is always a fine answer; they can stop
-at any point and pick up later.
+the app will ask their permission a few times in the next minute or two — choose Yes each
+time (one of them says "allow Claude to edit its own settings": that is the brain writing
+its own notes inside this folder), and nothing in those steps leaves their computer; "I
+don't know" is always a fine answer; they can stop at any point and pick up later.
 
 ## Step 2 — Quiet setup
 Do these without asking. Say one line about each only if there is something they need to know.
@@ -58,7 +65,7 @@ folder, then runs the hook by a relative path — the one form found to work in 
 ```json
 {
   "hooks": {
-    "SessionStart": [{ "matcher": "compact|clear", "hooks": [
+    "SessionStart": [{ "matcher": "compact", "hooks": [
       { "type": "command", "command": "cd \"$CLAUDE_PROJECT_DIR\" && LAUNCHER .claude/hooks/session-start.py" } ] }],
     "PreCompact": [{ "matcher": "auto|manual", "hooks": [
       { "type": "command", "command": "cd \"$CLAUDE_PROJECT_DIR\" && LAUNCHER .claude/hooks/pre-compact.py" } ] }],
@@ -109,8 +116,11 @@ today's date and one line ("onboarded"). This stops onboarding re-running every 
 `/start` can still be run by hand any time the founder wants the briefing or roadmap again.
 
 ## Later — research tools (only when the founder says "set up research tools")
-Not part of the first session. *(Claude Code only.)* Needs Node (`node --version`) and, for
-most servers, a free API key. Walk the founder through it one server at a time:
+Not part of the first session. Check now whether Node is available (`node --version`) and
+which of `COMPANIES_HOUSE_API_KEY`, `EXA_API_KEY`, `FIRECRAWL_API_KEY` are set. Most servers
+need a free API key. In Codex the same servers are already in `.codex/config.toml`: export
+the keys in the shell that launches Codex, accept the folder trust prompt, restart Codex —
+no file copy. In Claude Code, walk the founder through it one server at a time:
 - **Companies House** — free UK company data. Key from
   developer.company-information.service.gov.uk (free account).
 - **Exa** (web search) and **Firecrawl** (web crawling) — free tiers; keys from exa.ai and

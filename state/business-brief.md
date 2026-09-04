@@ -5,7 +5,7 @@
 > idea. Everything here is the founder's belief at intake — treat it as `[ASSUMPTION]` until
 > Phase 1 produces evidence.
 >
-> Empty until the venture's first session. Run the `business-intake` skill (or `/idea-intake`)
+> Empty until the venture's first session. Run the `business-intake` skill (or `/business-intake`)
 > to populate it.
 
 ## 1. The idea & the insight

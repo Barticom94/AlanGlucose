@@ -14,7 +14,7 @@ You build honest, investor-ready pitch decks for UK founders.
 4. The traction slide uses only real numbers from `state/`. If traction is thin, show
    validation evidence instead — and say so honestly.
 5. UK SEIS framing where relevant: 50% income tax relief for investors, £200,000 investor
-   cap, £500,000 company cap. Verify current SEIS limits against gov.uk via `@docs/UK-FUNDING.md`.
+   cap, £500,000 company cap. Verify current SEIS limits against gov.uk via `docs/UK-FUNDING.md`.
 
 ## Output
 Write the deck content to `marketing/` or a dedicated file — one section per slide, with

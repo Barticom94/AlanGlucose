@@ -7,7 +7,8 @@
 ## First run
 If `.claude/.initialised` does not exist, this brain has never been opened. Before anything
 else — before answering whatever the founder just typed — run the `start` skill
-(`.claude/skills/start/SKILL.md`). It sets the machine up quietly, briefs the founder, shows
+(`.claude/skills/start/SKILL.md`; `.agents/skills/start/SKILL.md` in Codex). It sets the
+machine up quietly, briefs the founder, shows
 the roadmap, and begins the idea intake. Do not skip it and do not wait to be asked.
 
 ## WHAT
@@ -111,12 +112,19 @@ These rules override default helpfulness. When a rule conflicts with being agree
 
 ## State — the memory bank
 `state/active_context.md` (focus, next step) and `state/progress.md` (status against the gate)
-load every session and after compaction; keep each under 30 lines. Read when needed:
+load every session and after compaction in Claude Code, via `CLAUDE.md`; in any other harness,
+read both before your first reply and again after a compaction. Keep each under 30 lines.
+Read when needed:
 `business-brief.md` (intake record), `project_brief.md`, `product_context.md`, `financials.md`
 (every number), `risks.md`, `decisions_log.md` (append-only), `24-steps.md`, `system_patterns.md`,
 `tech_context.md`. Commit after every significant decision, if git is set up.
 
 ## Skills, subagents, packs
+- **Reply shape**: the partner frame — what would stop me · what I can fill · what I'd be
+  coming in for · my position — with its citation-string, bracket-audit, and provenance rules.
+  Claude Code loads it as the `partner` output style; a harness without output styles (Codex,
+  Gemini CLI, Cursor) reads the generated copy `.agents/output-style.md` before its first
+  substantive reply and follows it as part of this file.
 - **Skills**: `.claude/skills/<name>/SKILL.md` (mirrored in `.agents/skills/`). Use one
   whenever its description matches the task.
 - **Subagents**: `.claude/agents/` (mirrored in `.codex/agents/`). They review in a clean
@@ -136,7 +144,8 @@ load every session and after compaction; keep each under 30 lines. Read when nee
   — `ecommerce`, `saas`, `services`, `physical` — and more than one can apply.
 
 ## When the founder says… → use
-- "new idea" / `/idea-intake` → `business-intake`, then `idea-interrogation`
+(Slash names are Claude Code commands; in Codex type `$skill-name` or the plain words.)
+- "new idea" / `/business-intake` → `business-intake`, then `idea-interrogation`
 - "reality check" / "am I kidding myself" → `red-team-devils-advocate`
 - "stress-test the numbers" → `financial-modeling-uk` + subagent `financial-stress-tester`
 - "phase gate" / "weekly review" → `weekly-review`
@@ -148,11 +157,17 @@ load every session and after compaction; keep each under 30 lines. Read when nee
 
 ## Long sessions and load policy
 Keep sessions to roughly 2 hours; run `session-handoff` at every task boundary and before any
-break. After a compaction, re-read this file, `state/active_context.md`, and
-`state/handover-latest.md` if it exists. Read on demand only, never at session start:
+break. After a compaction this file, `state/active_context.md`, and `state/progress.md` are
+the contract — Claude Code re-injects them from disk; a harness that does not must read them —
+and they outrank the compaction summary's paraphrase. Read `state/handover-latest.md` only if
+it exists (the optional PreCompact hook writes it). Read on demand only, never at session start:
 `docs/*`, `research/*`, `financials/*`, `packs/*`, `.claude/SYCOPHANCY.md`.
 
 ## Deterministic rules live in the harness, not here
 Destructive commands are blocked by the harness's permission rules (`permissions.deny` in
-`.claude/settings.json` for Claude Code). Optional Python hooks in `.claude/hooks/` (transcript
-backup, context restore, session log, command guardrail) are wired per machine by `start`.
+`.claude/settings.json` for Claude Code). Codex ships no deny list — its sandbox and approval
+prompts apply, and it reads `.codex/` (subagents, MCP) only after the folder's trust prompt is
+accepted; treat that `deny` list as the commands never to run in any harness. One shipped hook
+prints `.claude/hooks/after-compact.md` after a compaction (plain `cat`, no Python). Optional
+Python hooks in `.claude/hooks/` (transcript backup, context restore, session log, command
+guardrail) are wired per machine by `start`.

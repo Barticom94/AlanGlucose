@@ -18,7 +18,7 @@ evidence gaps with the cheapest test.
 ### 1. Start from the intake
 The idea is captured first by the `business-intake` skill, which seeds `state/business-brief.md`
 and the other state files. Read `state/business-brief.md` before anything else. If it is empty,
-stop and run `business-intake` (or `/idea-intake`) — interrogation needs a full picture to
+stop and run `business-intake` (or `/business-intake`) — interrogation needs a full picture to
 bite on, not a one-line thesis.
 
 ### 2. Disciplined Entrepreneurship, steps 1-3 (Aulet, MIT)

@@ -12,13 +12,14 @@ falsifiable criteria, not a feeling.
 
 1. Download the template ZIP (link in `README.md`), unzip it, rename the folder to your
    venture, and open it in the Claude Code app as a new session. Say yes to trusting the
-   folder, click Allow when the app asks permission for small actions, and say hello.
+   folder, choose Yes when the app asks permission for small actions, and say hello.
 2. The `start` skill runs on its own: a quiet setup, a short briefing, the roadmap, then the
    intake — one question at a time. Answer honestly; "I don't know" is a real answer.
 3. From your answers the brain writes `state/business-brief.md`, seeds every other `state/`
    file, installs the vertical pack(s) that fit your kind of business, and hands over to
    `idea-interrogation`.
-4. Run `/premortem` and `/reality-check` before the end of week one.
+4. Run `/premortem` and `/red-team-devils-advocate` (or just say "reality check") before
+   the end of week one.
 5. If git was set up, commit after every meaningful conversation — a versioned record of the
    brain's thinking. If not, back the folder up now and then.
 

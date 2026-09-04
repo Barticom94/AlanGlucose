@@ -18,7 +18,9 @@ You need the Claude Code app (desktop) with a Claude subscription. Nothing else.
    somewhere sensible, like Documents.
 3. Open the Claude Code app, start a new session, and choose that folder as the project.
    The app asks whether you trust the folder — say yes. It will also ask permission for a
-   few small actions in the first minute or two; click Allow. Nothing leaves your computer.
+   few small actions in the first minute or two; choose Yes each time (one of them says
+   "allow Claude to edit its own settings": that is the brain writing its own notes inside
+   this folder). Nothing in those steps leaves your computer.
 4. Say hello.
 
 The brain takes it from there: a quiet setup, a short briefing, the roadmap, then it starts
@@ -40,21 +42,23 @@ folder's full path and tell me to open it as a new session. Do nothing else in t
 ### Using it with Codex or another harness
 `AGENTS.md` is the contract (Claude Code imports it from `CLAUDE.md`). Skills are mirrored in
 `.agents/skills/`, subagents in `.codex/agents/`, and MCP servers in `.codex/config.toml`
-(fill in the keys). Open the folder in your harness and say hello. Hooks and the `partner`
-output style are Claude Code features; everything else is plain files. Not yet tested
-end-to-end in Codex — tell the maintainer what breaks.
+(keys are forwarded from your shell). Open the folder in your harness, accept its trust prompt
+for the folder (or `.codex/` is ignored), and say hello. Hooks are Claude Code only; the
+`partner` reply shape is mirrored to `.agents/output-style.md` and `AGENTS.md` tells other
+harnesses to read it. Not yet tested end-to-end in Codex — tell the maintainer what breaks.
 
 ## How it works
 
 - **`AGENTS.md`** — the behavioural contract: phases, gates, and the operating rules.
 - **`CLAUDE.md`** — Claude Code's entry point; imports `AGENTS.md` and the two live state files.
 - **`state/`** — the memory bank: plain markdown, updated at every task boundary.
-- **`.claude/skills/`** — 27 core skills, vertical-neutral, from idea interrogation to UK tax.
+- **`.claude/skills/`** — 28 core skills, vertical-neutral, from idea interrogation to UK tax.
 - **`packs/`** — vertical packs (`ecommerce`, `saas`, `services`, `physical`) installed by
   the intake. More than one can apply.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
 - **`.claude/settings.json`** — the `partner` output style (diligence first, then fill the
-  gaps) and the destructive-command deny rules. No hooks required.
+  gaps), the destructive-command deny rules, and one built-in hook that prints a short
+  reminder after a long session is compressed (plain `cat`, no Python).
 - **`.claude/hooks/`** — 4 *optional* Python helpers (transcript backup before compaction,
   context restore after it, session log, extra command guardrail), switched on per machine
   by the `start` skill. Nothing depends on them.
@@ -88,13 +92,13 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 ├── GLOBAL-CLAUDE.md.example  Optional honesty defaults for every project on a machine
 ├── .mcp.json.example         Optional research tools — start enables what it can
 ├── .claude/
-│   ├── settings.json      Output style + deny rules (no hooks)
+│   ├── settings.json      Output style, deny rules, one plain-text reminder hook
 │   ├── SYCOPHANCY.md      Anti-sycophancy contract
 │   ├── agents/            14 subagents
-│   ├── skills/            27 core skills
+│   ├── skills/            28 core skills
 │   ├── hooks/             4 optional Python helpers
 │   └── output-styles/     partner (default), reviewing, planning, building, presenting
-├── .agents/skills/        Generated mirror of the skills for Codex, Gemini CLI, Cursor
+├── .agents/               Generated mirror of the skills and the reply shape for Codex, Gemini CLI, Cursor
 ├── .codex/                Generated Codex subagents + MCP config
 ├── packs/                 ecommerce, saas, services, physical
 ├── state/                 The memory bank
@@ -104,7 +108,7 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 ├── marketing/             landing-pages, email-flows, ad-creatives
 ├── legal/                 T&Cs, privacy, returns, supplier-contracts/
 ├── tasks/                 Markdown to-do tracking
-└── tools/                 build-adapters.py — regenerates .agents/ and .codex/
+└── tools/                 build-adapters.py — maintainer only; not in the download
 ```
 
 ## For the template maintainer (not for founders)
@@ -125,12 +129,16 @@ so the README's "latest release" link always serves the newest one.
 
 ## What leaves your computer
 
-Nothing, unless you say yes to one thing. When the brain looks up a general fact, such as a
-tax rule, a fee, or a benchmark, it records it in `docs/LEARNED.md`. At a session handoff it
+Nothing goes back to this template unless you say yes to one thing. (The brain's web
+searches and page fetches go to the web like any browser's, and the conversation goes to
+Anthropic like any Claude session.) When the brain looks up a general fact, such as a tax
+rule, a fee, or a benchmark, it records it in `docs/LEARNED.md`. At a session handoff it
 asks, once, whether it may send those facts back to this template so other founders' brains
-know them too. It shows you every row before sending, and sending needs only an internet
-connection (a small relay the maintainer runs opens the issue; it sees the rows and your IP,
-stores nothing). Only the research it did is shared:
+know them too. It shows you every row before sending. Sending goes one of two ways: through
+a small relay the maintainer runs (it sees the rows and your IP, stores nothing) once this
+copy has been given the relay address, otherwise through a link that opens a pre-filled
+GitHub issue for you to submit, which needs a free GitHub account. Only the research it did
+is shared:
 never what you typed, never your venture's name, customers, competitors, or numbers. Say no
 and it never asks again. The merged facts live in `docs/KNOWLEDGE.md`, which every brain
 checks before searching.

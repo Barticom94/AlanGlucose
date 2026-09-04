@@ -31,7 +31,7 @@ forecasts). If a row could identify the venture, it does not go.
 4. **Confirm.** If consent is `ask`, wait for a yes. If `yes`, proceed after showing the rows.
 5. **Send**, by the first route that works. Build the rows as JSON first:
    `{"rows":[{"date":"YYYY-MM-DD","topic":"…","fact":"…","source":"…","confidence":"high|medium|low"}]}`
-   and write it to a temporary file inside this folder (delete it afterwards).
+   and write it to `tmp/learnings-<date>.json` (`tmp/` is git-ignored; the file can stay).
    - **Relay** (internet only) — if `ENDPOINT` above is a real URL, not the `{{…}}` placeholder:
      - Bash: `curl -sS -X POST -H "content-type: application/json" -H "x-alanglucose-client: alanglucose-v1" --data @<file> <ENDPOINT>`
      - PowerShell: `Invoke-RestMethod -Method Post -ContentType "application/json" -Headers @{"x-alanglucose-client"="alanglucose-v1"} -Body (Get-Content <file> -Raw) <ENDPOINT>`

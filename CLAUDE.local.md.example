@@ -20,7 +20,7 @@ other commitments. The brain uses this to calibrate recommendations — five hou
 £500 is a different venture from twenty hours and £5k.
 
 ## Machine notes
-- Python (optional): runs the three helper hooks in `.claude/hooks/` if `start` switched them on.
+- Python (optional): runs the four optional helper hooks in `.claude/hooks/` if `start` switched them on.
 - Node (optional): runs the research tools in `.mcp.json`.
 - `uv` is only needed for the optional `basic-memory` MCP server.
 - This folder lives at: {{ABSOLUTE_PATH}}

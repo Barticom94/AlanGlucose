@@ -18,7 +18,7 @@ information, not legal or tax advice.
    Act 2015 (satisfactory quality, 30-day short-term right to reject).
 5. Sector regulators — flag any FCA, MHRA, Ofcom, ICO, or Trading Standards jurisdiction.
 6. Verify every time-sensitive figure against gov.uk and record the date checked. See
-   `@docs/UK-LEGAL-TAX.md`.
+   `docs/UK-LEGAL-TAX.md`.
 
 ## Output
 A clear exposure note. Each item: the rule, why it applies here, and the concrete action.

@@ -36,10 +36,17 @@ Put these to the founder directly. Weak answers are findings.
   details right now? At what price would you?"
 - **Channel:** "Where would a customer first hear about this — and is that channel
   reachable within your real month-1 budget (intake section 5.2)?"
+- **Competition:** "Who else already does this, and what do these customers use today?"
+  Then find the named UK operators yourself — a knowledge gap, yours to fill, not an evidence
+  gap. "No differentiation", "thin moat", and "crowded" are claims about the world: a
+  competitive verdict with no named, cited competitor — or a cited "searched, found none" —
+  is opinion, and opinion cannot carry a position or a kill reason.
 - **Moat:** "If I had £500k and 12 months, what would I build to beat you?"
 - **Unit economics:** "What is the CAC? The gross margin? At what LTV/CAC does this work?"
 - **UK-specific:** "Does this trip GDPR/PECR? Need a VAT-registered supplier? Cross any
-  regulator — FCA, MHRA, Ofcom, ICO?"
+  regulator — FCA, MHRA, Ofcom, ICO?" Any marketing list, customer record, or automated
+  message makes the venture a data controller: ICO registration and PECR apply however
+  mundane the data looks — say so even when nothing is sensitive.
 - **Personal:** "Can you keep your day job while running this? What is the smallest test
   that fits the hours you actually have (intake section 5.1)?"
 
@@ -50,10 +57,20 @@ Fill a Lean Canvas v0 (use the `gtm-positioning` skill). State founder-market fi
 Hand off to the `premortem` skill for an initial failure-mode list.
 
 ### 6. Position
-Spawn the `devils-advocate` subagent. Then write your position to `state/project_brief.md`:
+Spawn the `devils-advocate` and `evidence-checker` subagents and wait for both — the position
+is not final, and is not written to any state file, until both reviews have run.
+`evidence-checker` audits every citation made this session: any citation that is not a URL
+fetched this session is downgraded to `[ASSUMPTION — unverified]` before the position is
+written. Quote each subagent's strongest findings before your position; a review with no
+quoted findings did not happen. Give your position in the same message as those findings —
+never end on quoted reviews, a risk list, or another question and wait to be asked "so are
+you in?". Once both reviews have run, the verdict is owed unasked. Then write it to
+`state/project_brief.md`:
 **in** (a defended thesis with the beachhead identified); **in, if** (at most three
 conditions, each with its fix or its test); or **not in** (a kill memo naming the weak
 answer, and what would change your mind). A kill is a good outcome — it cost a week, not a year.
 
 ## Gate to Phase 1
 The founder commits to interview 10 strangers — not friends, not family — who have the problem.
+Hand straight to the `customer-discovery` skill for the interview script and, for a founder
+with no contacts, a cold-approach list. Do not end on "go and interview ten strangers" alone.

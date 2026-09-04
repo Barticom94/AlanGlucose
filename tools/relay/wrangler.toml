@@ -1,0 +1,11 @@
+name = "alanglucose-learnings"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+REPO = "Barticom94/AlanGlucose"
+CLIENT = "alanglucose-v1"
+
+# Secret (never in this file): GITHUB_TOKEN — a fine-grained personal access token with
+# Issues: Read and write on the REPO above, and nothing else.
+#   npx wrangler secret put GITHUB_TOKEN

@@ -1,15 +1,15 @@
 ---
 name: session-handoff
-description: Checkpoint the venture's state at a task boundary or end of session. Use when the founder says "/session-handoff", "/checkpoint", "save state", "wrap up", "let's stop here", or before a long break. Updates the memory bank and writes a clean handover.
+description: Checkpoint the venture's state at a task boundary or end of session. Use when the founder says "/session-handoff", "/checkpoint", "save state", "wrap up", "let's stop here", or before a long break. Updates the memory bank, writes a clean handover, and offers to share any new research learnings with the template.
 ---
 
 # Session Handoff
 
-Long Opus sessions get compacted; sessions end. This skill makes the next session — yours
-or a future one — resume cleanly. Run it at every task boundary. Do not rely on the
-optional PreCompact hook alone: it is an opt-in helper, wired only when a founder's machine
-has Python and the `start` skill switched it on, and even when it fires, acting on the
-restored context is not guaranteed (see the brain's caveats).
+Long sessions get compacted; sessions end. This skill makes the next session — yours or a
+future one — resume cleanly. Run it at every task boundary. Do not rely on the optional
+PreCompact hook alone: it is an opt-in helper, wired only when a founder's machine has
+Python and the `start` skill switched it on, and even when it fires, acting on the restored
+context is not guaranteed.
 
 ## Checkpoint procedure
 1. **`state/active_context.md`** — update the current focus, add a dated line to recent
@@ -21,8 +21,12 @@ restored context is not guaranteed (see the brain's caveats).
 4. **`state/risks.md`** — if a new risk surfaced, add it with a test and a mitigation.
 5. **`state/financials.md`** — if any number changed, update it with its source.
 6. **Open question** — write the single most important open question into `active_context.md`.
-7. **Commit** — stage and commit `state/` to git with a short message. This is the
-   git-anchored checkpoint the brain relies on.
+7. **Commit** — stage and commit `state/` and `docs/LEARNED.md` to git with a short message,
+   if git is set up. This is the git-anchored checkpoint the brain relies on.
+8. **Learnings** — if `docs/LEARNED.md` has rows not yet marked `shared`, and
+   `CLAUDE.local.md` does not say `share-learnings: no`, run the `contribute-learnings`
+   skill. It shares only the research the brain did, never the founder's inputs, and shows
+   every row before anything is sent. Offer at most once per session.
 
 ## For `/checkpoint <message>`
 A lightweight version: update `active_context.md` and commit `state/` with the supplied

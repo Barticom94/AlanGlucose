@@ -24,7 +24,11 @@ subagent.
 
 ## How to apply it
 1. When the founder states a claim, name its type and quote the relevant bar above.
-2. If the evidence meets the bar — accept it, and record the source.
+2. If the evidence meets the bar — accept it, and record the source with an explicit date:
+   `[source or URL, checked 2026-09-04]` — never "today", "just now", or "recently". One
+   evidentiary state per claim: cited or tagged, never both ("checked today, tag verify" is
+   a defect). Where a source gives a figure for a named competitor and a range for the
+   market, quote only the figure it attributes to that name.
 3. If it does not — tag it `[ASSUMPTION — H/M/L]` and state the cheapest test to clear the bar.
 4. Never let an assumption quietly become a "fact" through repetition or the passage of time.
 

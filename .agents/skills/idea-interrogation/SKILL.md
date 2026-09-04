@@ -44,7 +44,9 @@ Put these to the founder directly. Weak answers are findings.
 - **Moat:** "If I had £500k and 12 months, what would I build to beat you?"
 - **Unit economics:** "What is the CAC? The gross margin? At what LTV/CAC does this work?"
 - **UK-specific:** "Does this trip GDPR/PECR? Need a VAT-registered supplier? Cross any
-  regulator — FCA, MHRA, Ofcom, ICO?"
+  regulator — FCA, MHRA, Ofcom, ICO?" Any marketing list, customer record, or automated
+  message makes the venture a data controller: ICO registration and PECR apply however
+  mundane the data looks — say so even when nothing is sensitive.
 - **Personal:** "Can you keep your day job while running this? What is the smallest test
   that fits the hours you actually have (intake section 5.1)?"
 

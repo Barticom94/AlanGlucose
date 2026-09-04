@@ -88,6 +88,8 @@ live state files after every compaction.
 - `state/active_context.md` — updated whenever you change what you are working on.
 - `state/decisions_log.md` — append-only; never edit past entries.
 - `state/risks.md` — updated whenever a premortem or red-team runs.
+- `state/predictions.md` — the scoreboard; the weekly review opens with the spine number and
+  scores last week's predictions.
 
 Write all of these as if a stranger will pick them up cold — because a future you, or a
 future instance of the brain, will.

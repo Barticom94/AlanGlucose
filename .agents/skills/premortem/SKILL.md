@@ -38,6 +38,8 @@ behind it. A premortem with no resulting tests is theatre.
 ### 5. Record
 Write to `state/risks.md` under `### [YYYY-MM-DD] Premortem: <topic>`. Update the open-risks
 table. Carry the most dangerous assumption into the current task as the next thing to test.
+The predicted result of the cheapest test on the most dangerous assumption is a row in
+`state/predictions.md` (a number or a date, a confidence, a resolve-by date).
 
 ## When to run it
 Every phase gate. Before every spend over £200. Before any irreversible decision —

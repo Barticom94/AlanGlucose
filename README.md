@@ -51,7 +51,8 @@ harnesses to read it. Not yet tested end-to-end in Codex — tell the maintainer
 
 - **`AGENTS.md`** — the behavioural contract: phases, gates, and the operating rules.
 - **`CLAUDE.md`** — Claude Code's entry point; imports `AGENTS.md` and the two live state files.
-- **`state/`** — the memory bank: plain markdown, updated at every task boundary.
+- **`state/`** — the memory bank: plain markdown, updated at every task boundary, with a
+  predictions scoreboard and an open-conditions list the weekly review reads back.
 - **`.claude/skills/`** — 28 core skills, vertical-neutral, from idea interrogation to UK tax.
 - **`packs/`** — vertical packs (`ecommerce`, `saas`, `services`, `physical`) installed by
   the intake. More than one can apply.

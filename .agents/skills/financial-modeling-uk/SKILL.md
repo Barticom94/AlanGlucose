@@ -31,7 +31,8 @@ Verify every rate against gov.uk; UK tax figures move at 6 April and 1 February.
 2. Build bottoms-up: revenue = units × price × frequency; cost it line by line.
 3. Produce three cases — conservative, base, optimistic — and label which inputs move.
 4. Model the cash curve, not just the P&L. A profitable plan can still run out of cash.
-5. Write the model to `financials/`; update headline figures in `state/financials.md`.
+5. Write the model to `financials/`; update headline figures in `state/financials.md`. Every
+   forecast figure with a date is a row in `state/predictions.md` (confidence, resolves by).
 6. For any real decision, spawn `financial-stress-tester` before concluding.
 
 ## The honest test

@@ -34,6 +34,8 @@ Write a script to `research/customer-interviews/`. Structure it:
 - One file per interview in `research/customer-interviews/`.
 
 ## Debriefing
+After each debrief, the stranger count updates the Spine line in `state/progress.md` and the
+gate count in `state/active_context.md`.
 After every 3 interviews, run the `red-team-devils-advocate` skill on the results so far.
 After 10, spawn the `customer-interview-synthesiser` subagent to extract patterns, buying
 signals, and a revised persona.

@@ -1,9 +1,11 @@
 ---
 name: contribute-learnings
-description: Send the general research facts this brain has looked up (docs/LEARNED.md) back to the AlanGlucose template, so every venture's knowledge base improves. Use when the founder says "share learnings", "contribute", "send the research back", or when session-handoff finds unshared rows in docs/LEARNED.md. Shares ONLY the research the brain did — never anything the founder typed, and never anything about their venture, customers, or competitors.
+description: Send the general research facts this brain has looked up (docs/LEARNED.md) back to the AlanGlucose template, so every venture's knowledge base improves. Use when the founder says "share learnings", "contribute", "send the research back", or when session-handoff finds unshared rows in docs/LEARNED.md. Needs only an internet connection. Shares ONLY the research the brain did — never anything the founder typed, and never anything about their venture, customers, or competitors.
 ---
 
 # Contribute learnings
+
+ENDPOINT: {{LEARNINGS_ENDPOINT}}
 
 **What is shared, exactly:** rows of `docs/LEARNED.md` — a general fact (a UK rule, a fee,
 a benchmark, how a mechanism works) with its source, date, and confidence.
@@ -27,19 +29,25 @@ forecasts). If a row could identify the venture, it does not go.
    figure the founder set. When unsure, drop it — a missing fact costs nothing; a leaked one
    costs trust. Then show the founder the exact rows that will be sent, in full.
 4. **Confirm.** If consent is `ask`, wait for a yes. If `yes`, proceed after showing the rows.
-5. **Send**, by the first route that works:
-   - `gh auth status` succeeds → `gh issue create --repo Barticom94/AlanGlucose
-     --label learnings --title "Learnings: <YYYY-MM-DD> (<n> facts)" --body-file <tmp>`
-     where the body is the rows in the learnings issue-template table.
-   - Otherwise → build `https://github.com/Barticom94/AlanGlucose/issues/new?template=learnings.md&title=<title>&body=<url-encoded rows>`
+5. **Send**, by the first route that works. Build the rows as JSON first:
+   `{"rows":[{"date":"YYYY-MM-DD","topic":"…","fact":"…","source":"…","confidence":"high|medium|low"}]}`
+   and write it to a temporary file inside this folder (delete it afterwards).
+   - **Relay** (internet only) — if `ENDPOINT` above is a real URL, not the `{{…}}` placeholder:
+     - Bash: `curl -sS -X POST -H "content-type: application/json" -H "x-alanglucose-client: alanglucose-v1" --data @<file> <ENDPOINT>`
+     - PowerShell: `Invoke-RestMethod -Method Post -ContentType "application/json" -Headers @{"x-alanglucose-client"="alanglucose-v1"} -Body (Get-Content <file> -Raw) <ENDPOINT>`
+     A reply with `"ok":true` and an issue link means it worked. Any other reply: fall through.
+   - **gh** — `gh auth status` succeeds → `gh issue create --repo Barticom94/AlanGlucose
+     --label learnings --title "Learnings: <YYYY-MM-DD> (<n> facts)" --body-file <tmp>` with the
+     rows as the learnings issue-template table.
+   - **Link** — build `https://github.com/Barticom94/AlanGlucose/issues/new?template=learnings.md&title=<title>&body=<url-encoded rows>`
      and give it to the founder: "open this link, sign in to GitHub if it asks, and press
      Submit". Keep the body under ~6,000 characters; batch if longer.
-   - Otherwise (no GitHub account) → write the rows to `docs/learnings-to-share-<date>.md`
-     and say it can be emailed to the maintainer whenever convenient.
+   - **File** — write the rows to `docs/learnings-to-share-<date>.md` and say it can be sent
+     to the maintainer whenever convenient. Nothing is lost; the rows stay unshared until then.
 6. **Mark** each sent row `shared` in its last column. One line to the founder: how many
-   facts went, and where.
+   facts went, and by which route.
 
 ## Never
 - Never send without showing the rows first. Never include file paths, names, or anything
   from `state/` or `research/`. Never send more than the scrubbed rows. Never nag: offer at
-  most once per session, at the handoff.
+  most once per session, at the handoff. Never retry the relay more than once.

@@ -25,7 +25,9 @@ offline and pasted back — only if the founder asks to write it all down, or sa
 rather do it in their own time.
 
 ## 1. The short intake — about 13 questions, 10–15 minutes
-Ask these in order, one at a time. Follow up at most once per answer, and only on a gap.
+Ask these in order, one per message — never two in a turn, however related, however quick the
+founder seems. Two questions in one message is a defect, not efficiency: ask the first, wait,
+then ask the second. Follow up at most once per answer, and only on a gap.
 The numbers refer to the full framework.
 
 1. **5.0** Their name, and where in the UK they are (region or nearest city).

@@ -9,7 +9,9 @@ Phase 0. The goal is not to validate the idea — it is to find out, as cheaply 
 as possible, whether it is worth validating at all. Most ideas should die here. That is the
 skill working, not failing.
 
-Read `.claude/SYCOPHANCY.md` first. Lead with the hard questions, not encouragement.
+Read `.claude/SYCOPHANCY.md` first. Lead with the hard questions, not encouragement — and
+fill what you can: knowledge gaps from research, decision gaps with a recommendation,
+evidence gaps with the cheapest test.
 
 ## Process
 
@@ -47,10 +49,11 @@ Fill a Lean Canvas v0 (use the `gtm-positioning` skill). State founder-market fi
 ### 5. Premortem
 Hand off to the `premortem` skill for an initial failure-mode list.
 
-### 6. Verdict
-Spawn the `devils-advocate` subagent. Then write a verdict to `state/project_brief.md`:
-either a defended thesis with the beachhead identified, or a **kill memo** naming the weak
-answer that killed it. A kill is a good outcome — it cost a week, not a year.
+### 6. Position
+Spawn the `devils-advocate` subagent. Then write your position to `state/project_brief.md`:
+**in** (a defended thesis with the beachhead identified); **in, if** (at most three
+conditions, each with its fix or its test); or **not in** (a kill memo naming the weak
+answer, and what would change your mind). A kill is a good outcome — it cost a week, not a year.
 
 ## Gate to Phase 1
 The founder commits to interview 10 strangers — not friends, not family — who have the problem.

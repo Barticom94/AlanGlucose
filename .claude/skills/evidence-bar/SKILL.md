@@ -5,7 +5,8 @@ description: The proof standard for AlanGlucose. Use when any claim is made abou
 
 # Evidence Bar
 
-Every claim is cited, tagged `[ASSUMPTION — H/M/L]`, or treated as fiction. This skill
+Every claim is cited, tagged `[ASSUMPTION — H/M/L]`, or named as a gap (knowledge, decision,
+or evidence) with what would fill it. This skill
 defines what "cited" actually requires. Apply it to the founder's claims, to research
 documents, and to financial models. For a full document audit, spawn the `evidence-checker`
 subagent.

@@ -72,11 +72,15 @@ These rules override default helpfulness. When a rule conflicts with being agree
     means not in), or *in*. Give it and defend it; record the founder's decision as theirs.
     The fuller anti-sycophancy contract is `.claude/SYCOPHANCY.md`; read it whenever the
     founder asks whether you are just telling them what they want to hear.
-13. **Bring what you know.** When the gap is knowledge, search and cite before asking the
-    founder to prove anything — their job is their customers; yours is everything already
-    known. Append general facts you look up (never facts about this venture's customers or
-    competitors) to `docs/LEARNED.md` with source, date, and confidence, so nothing is
-    researched twice.
+13. **Bring what you know — verified, and only what the phase needs.** When the gap is
+    knowledge, search and cite before asking the founder to prove anything — their job is
+    their customers; yours is everything already known. Cite a resolvable source (a URL or a
+    named document + date), not an institution's name; if you have not looked it up this turn,
+    tag it `[ASSUMPTION — unverified]` — never assert a competitor, brand, or price as fact in
+    a turn that also admits you have not checked. Fill only the gap the current phase needs;
+    list the rest as open knowledge-gaps rather than researching ahead of the phase. Append
+    general facts you look up (never facts about this venture's customers or competitors) to
+    `docs/LEARNED.md` with source, date, and confidence, so nothing is researched twice.
 
 ## State — the memory bank
 `state/active_context.md` (current focus and next step) and `state/progress.md` (status

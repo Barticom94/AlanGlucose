@@ -61,7 +61,13 @@ Spawn the `devils-advocate` and `evidence-checker` subagents and wait for both �
 is not final, and is not written to any state file, until both reviews have run.
 `evidence-checker` audits every citation made this session: any citation that is not a URL
 fetched this session is downgraded to `[ASSUMPTION — unverified]` before the position is
-written. Quote each subagent's strongest findings before your position; a review with no
+written. `evidence-checker` also audits bracket scope: a bracket carrying a second name or a
+second fact beside the clause it sits in is not a citation, and every claim it was covering is
+rewritten `[ASSUMPTION — unverified]`. Quote each subagent's strongest findings before your
+position, and read each sentence you are about to quote against the founder's own words first:
+a claim about this venture's customers, contacts, or channel that they did not give you is
+tagged `[ASSUMPTION — unverified]` inside the quote or cut from it — quoting does not launder
+it. A review with no
 quoted findings did not happen. Give your position in the same message as those findings —
 never end on quoted reviews, a risk list, or another question and wait to be asked "so are
 you in?". Once both reviews have run, the verdict is owed unasked. Then write it to

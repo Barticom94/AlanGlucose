@@ -113,9 +113,23 @@ After editing anything under `.claude/skills/`, `.claude/agents/`, or `.mcp.json
 run `python tools/build-adapters.py` and commit the regenerated `.agents/` and `.codex/`
 folders. CI fails if they are stale. Founders using a venture never need this.
 
+Learnings arrive as issues labelled `learnings` (see `.github/ISSUE_TEMPLATE/learnings.md`).
+`python tools/harvest-learnings.py` reviews them into `docs/KNOWLEDGE.md`; a weekly Action
+opens a PR with the proposed rows, so nothing enters the knowledge base unreviewed.
+
 To publish a new version: `git tag v1.x.y && git push --tags`. CI builds `AlanGlucose.zip`
 from the tag (tracked files only; `tools/` and `.github/` excluded) and creates the release,
 so the README's "latest release" link always serves the newest one.
+
+## What leaves your computer
+
+Nothing, unless you say yes to one thing. When the brain looks up a general fact, such as a
+tax rule, a fee, or a benchmark, it records it in `docs/LEARNED.md`. At a session handoff it
+asks, once, whether it may send those facts back to this template so other founders' brains
+know them too. It shows you every row before sending. Only the research it did is shared:
+never what you typed, never your venture's name, customers, competitors, or numbers. Say no
+and it never asks again. The merged facts live in `docs/KNOWLEDGE.md`, which every brain
+checks before searching.
 
 ## Caveats
 

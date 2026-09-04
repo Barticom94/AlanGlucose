@@ -1,0 +1,60 @@
+name: harvest-learnings
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+  pull-requests: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Harvest learnings from open issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # Not passing --close: this token can read issues but closing them is left to the
+        # maintainer, who reviews the PR this step's changes go into first.
+        run: python tools/harvest-learnings.py --apply | tee harvest-output.txt
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet docs/KNOWLEDGE.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open a PR with the appended rows
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="harvest/${{ github.run_id }}"
+          git checkout -b "$branch"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/KNOWLEDGE.md
+          git commit -m "Harvest learnings from issues"
+          git push origin "$branch"
+          {
+            echo "Appended rows from tools/harvest-learnings.py:"
+            echo
+            echo '```'
+            cat harvest-output.txt
+            echo '```'
+          } > pr-body.md
+          gh pr create --base main --head "$branch" \
+            --title "Harvest learnings" \
+            --body-file pr-body.md

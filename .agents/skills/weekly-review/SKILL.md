@@ -33,7 +33,7 @@ directly and ask why.
 
 ## Phase gates — the hard questions
 Run the gate check before advancing a phase. Run `premortem` and the `devils-advocate`
-subagent first. Read Open conditions first: any condition in `state/active_context.md` due
+subagent first. Then read Open conditions: any condition in `state/active_context.md` due
 before this gate that is still open is named; the gate does not pass until it is met or the
 founder logs the decision to proceed without it in `state/decisions_log.md`.
 - **0 → 1:** Have you interviewed 10 strangers — not friends, not family — who have the problem?
@@ -44,11 +44,11 @@ founder logs the decision to proceed without it in `state/decisions_log.md`.
 
 ## Gates run both ways
 The demotion triggers are the ones in `AGENTS.md`: commitments withdrawn; retention below the
-2 → 3 bar; the channel's CAC above LTV/3 for eight weeks; EBITDA negative for a quarter. When
-one is true at the review, name it and move the phase back. On demotion or advance, update the
-Phase and Gate lines in the WHY section of `AGENTS.md`, `state/active_context.md` (phase,
-gate), and `state/progress.md` (status, Spine), and append an entry titled "Phase N → M" to
-`state/decisions_log.md`.
+2 → 3 bar; the channel's CAC above LTV/3 for eight weeks; EBITDA negative for a quarter. Check
+them at every review, after step 7; when one is true, name it and move the phase back. On
+demotion or advance, update the Phase and Gate lines in the WHY section of `AGENTS.md`,
+`state/active_context.md` (phase, gate), and `state/progress.md` (status, Spine), and append
+an entry titled "Phase N → M" to `state/decisions_log.md`.
 
 ## The gate rule
 A gate is passed on evidence, not on feeling ready. If the evidence is not there, the phase

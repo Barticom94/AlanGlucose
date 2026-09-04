@@ -79,7 +79,7 @@ Each condition of an *in, if* is written to `state/active_context.md` under Open
 with the gate it must be met before. At the same moment, log your own prediction on the gate
 to `state/predictions.md`: how many of the ten strangers will describe the problem unprompted
 (a number), a confidence, and the date the ten are due — plus the founder's kill criterion as
-a row in their words (who: founder).
+a row in their words (who: founder), unless the intake has already logged it as row 1.
 
 ## Gate to Phase 1
 The founder commits to interview 10 strangers — not friends, not family — who have the problem.

@@ -21,7 +21,7 @@ Phase 0 — Idea
 
 ## Open conditions
 Format: `- [ ] <one verb, one action> — due before gate <N→M> — set <date> — open | met <date>: <evidence> | waived <date>: see decisions_log`
-- none yet — written at the position
+- {{ none yet — written at the position }}
 
 ## Gate to the next phase
 **0 → 1:** 10 interviews completed with strangers (not friends, not family) who have the

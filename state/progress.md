@@ -1,6 +1,6 @@
 # Progress
 
-> Status against the gate. Updated at every task boundary; loaded every session. Keep it under 30 lines.
+> Status against the gate. Updated at every task boundary; under 30 lines — archive done phases to `state/decisions_log.md`.
 
 ## Status
 Phase 0 — Idea. Started {{DATE}}.

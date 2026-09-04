@@ -125,9 +125,9 @@ read both before your first reply and again after a compaction. Keep each under 
 Read when needed: `business-brief.md` (intake record), `project_brief.md`, `product_context.md`,
 `financials.md` (every number), `risks.md`, `decisions_log.md` (append-only), `predictions.md`
 (scoreboard), `24-steps.md`, `system_patterns.md`, `tech_context.md`. A forward-looking number
-or date you give — a price, a conversion, a delivery — is a prediction, logged there with
-confidence and a resolve-by date; a resolved miss is new evidence under rule 11. Commit after
-every significant decision, if git is set up.
+or date you give — a price, a conversion, a delivery — is a prediction, logged in
+`predictions.md` with confidence and a resolve-by date; a resolved miss is new evidence under
+rule 11. Commit after every significant decision, if git is set up.
 
 ## Skills, subagents, packs
 - **Reply shape**: the partner frame — what would stop me · what I can fill · what I'd be

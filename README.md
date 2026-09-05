@@ -47,6 +47,15 @@ for the folder (or `.codex/` is ignored), and say hello. Hooks are Claude Code o
 `partner` reply shape is mirrored to `.agents/output-style.md` and `AGENTS.md` tells other
 harnesses to read it. Not yet tested end-to-end in Codex — tell the maintainer what breaks.
 
+## What's new
+
+**v1.3.0 (2026-09-05)** — gates run both ways (a phase can be lost when its evidence stops being true); a
+predictions scoreboard the weekly review scores; open conditions that block a gate until met; one number per
+phase; an interview kit that sources strangers and files one record per interview; a `/status` screen; the
+contract consolidated to 184 named output forms; first-run fixes for Macs without developer tools and for Codex.
+The full list, every version, is in [`CHANGELOG.md`](CHANGELOG.md), and each
+[release](https://github.com/Barticom94/AlanGlucose/releases) carries its section as notes.
+
 ## How it works
 
 - **`AGENTS.md`** — the behavioural contract: phases, gates, and the operating rules.
@@ -88,6 +97,7 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 ├── AGENTS.md                 The contract — read by every harness
 ├── CLAUDE.md                 Claude Code entry point (imports AGENTS.md + state)
 ├── ABOUT.md                  What AlanGlucose is, and why
+├── CHANGELOG.md              What changed in each version
 ├── BOOTSTRAP.md              The operating manual
 ├── CLAUDE.local.md.example   Personal notes template — start copies it
 ├── GLOBAL-CLAUDE.md.example  Optional honesty defaults for every project on a machine
@@ -124,9 +134,11 @@ own GitHub account.
 `python tools/harvest-learnings.py` reviews them into `docs/KNOWLEDGE.md`; a weekly Action
 opens a PR with the proposed rows, so nothing enters the knowledge base unreviewed.
 
-To publish a new version: `git tag v1.x.y && git push --tags`. CI builds `AlanGlucose.zip`
-from the tag (tracked files only; `tools/` and `.github/` excluded) and creates the release,
-so the README's "latest release" link always serves the newest one.
+To publish a new version: move the `Unreleased` entries in `CHANGELOG.md` under a new
+`## [1.x.y] — <date>` heading (and add its compare link at the foot), commit, then
+`git tag v1.x.y && git push --tags`. CI builds `AlanGlucose.zip` from the tag (tracked files only;
+`tools/` and `.github/` excluded) and creates the release with that changelog section as its
+notes, so the README's "latest release" link always serves the newest one.
 
 ## What leaves your computer
 

@@ -22,10 +22,28 @@ jobs:
         # one folder named AlanGlucose rather than a folder inside a folder.
         run: git archive --format=zip -o AlanGlucose.zip HEAD
 
+      - name: Build the release notes from CHANGELOG.md
+        # The static header (how to start, what you need) followed by this tag's changelog section.
+        # A tag with no section falls back to the header alone and says so.
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          awk -v v="$version" '
+            /^## \[/ { p = ($0 ~ ("\\[" v "\\]")) ; if (p) { print; next } }
+            p && /^\[/ { p = 0 }
+            p { print }
+          ' CHANGELOG.md > section.md
+          { cat .github/release-notes.md; echo; echo "---"; echo; } > notes.md
+          if [ -s section.md ]; then
+            sed '1s/^## /## What changed in /' section.md >> notes.md
+          else
+            echo "_No CHANGELOG.md section for $GITHUB_REF_NAME — see the file for the nearest version._" >> notes.md
+          fi
+          cat notes.md
+
       - name: Create the release with the ZIP attached
         env:
           GH_TOKEN: ${{ github.token }}
         run: >
           gh release create "$GITHUB_REF_NAME" AlanGlucose.zip
           --title "AlanGlucose $GITHUB_REF_NAME"
-          --notes-file .github/release-notes.md
+          --notes-file notes.md

@@ -157,7 +157,6 @@ after every significant decision, if git is set up (`pending — …` for a foun
 - "new idea" / `/business-intake` → `business-intake`, then `idea-interrogation`
 - "reality check" / "am I kidding myself" → `red-team-devils-advocate` · "phase gate" / "weekly review" → `weekly-review`
 - "stress-test the numbers" → `financial-modeling-uk` + subagent `financial-stress-tester`
-- "phase gate" / "weekly review" → `weekly-review`
 - "set up research tools" → `start` (its final section) · "status" / "where are we" → `status`
 - "is this claim true?" → subagent `evidence-checker` + `evidence-bar`
 - "legal exposure" / "am I compliant" → subagent `legal-compliance-uk` + `uk-legal-structure`

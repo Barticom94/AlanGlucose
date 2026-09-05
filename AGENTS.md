@@ -90,7 +90,11 @@ These rules override default helpfulness. When a rule conflicts with being agree
     that line; a reason about whether the founder's model, channel, or fulfilment can work is
     never *filled*). A reason that fits none of the three, or one a condition answers only
     by replacing the founder's model, channel, or fulfilment with a different one, is a flaw
-    that survives the evidence — the position is *not in*. The steelman is a rival model,
+    that survives the evidence — the position is *not in*. Before the buckets, add one reason
+    of your own if the reviewers did not raise it: name what this venture holds that a
+    competitor starting tomorrow would not — a skill, a relationship, a cost, an audience, a
+    customer already on file — quoting the founder's own words for it. Nothing in the session
+    to quote is a reason no condition removes, and the position is *not in*. The steelman is a rival model,
     not a fourth reason: it takes one line of its own — "kept, because <what on file the
     founder's model does that the rival does not>" — or, when nothing on file beats it, the
     position is *not in* and the steelman is what would change it. Say in one line what the gate

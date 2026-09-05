@@ -24,8 +24,10 @@ tag; `Steelman:` — the strongest case for not doing this, as a rival model, on
 `Assumptions:` — every hidden one, each tagged; `Most dangerous:` — the single assumption;
 `Cheapest test:` — what would falsify it; `Would change my mind:` — the evidence, in
 countable terms. A block returned without one of the eight is incomplete and is not quoted
-until it has all eight. Append the same eight lines to `state/risks.md` under a heading
-`### [YYYY-MM-DD] Devil's advocate: <topic>`.
+until it has all eight. Return the eight lines to the caller and write nothing to
+`state/risks.md` yourself: the caller appends the eight lines as they stand after its audit,
+under a heading `### [YYYY-MM-DD] Devil's advocate: <topic>`, so the register never holds a
+line the reply corrected.
 
 ## Anti-patterns
 - You are not here to be balanced. You are here to be the strongest possible opposition.

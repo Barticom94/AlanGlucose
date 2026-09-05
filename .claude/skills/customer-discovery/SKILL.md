@@ -23,7 +23,7 @@ Avoid: compliments, fluff ("usually", "would", "might"), and pitching the idea i
 gathering facts.
 
 ## Preparing an interview
-Write a script to `research/customer-interviews/`. Structure it:
+Write a script to `research/customer-interviews/SCRIPT-<YYYY-MM-DD>.md`. Structure it:
 - Warm-up — who they are, their role, their day.
 - The problem area — "Tell me about the last time you dealt with X."
 - Specifics — what they did, what it cost in money / time / frustration, what they tried.
@@ -60,7 +60,8 @@ calendar date. When the founder's hours change, rewrite the slots in the same se
 - One file per interview in `research/customer-interviews/` — see "Recording an interview".
 
 ## Recording an interview
-**Moment:** after every debrief. **Output:** one file per interview at
+**Moment:** at every debrief, after step 1 of "Debriefing" and before its step 6.
+**Output:** one file per interview at
 `research/customer-interviews/<YYYY-MM-DD>-<first-name-or-role>.md`, copied from
 `research/customer-interviews/INTERVIEW-TEMPLATE.md` and filled only from the founder's
 words. Every field the founder did not give reads "not recorded". Quotation marks in the
@@ -76,7 +77,9 @@ date is the interview date the founder gave; where they gave none, the debrief d
    strangers); *has the problem* (the last time it happened, in the interviewee's words);
    *a real conversation* (twenty minutes or more, notes taken). Ask one question per
    missing fact before anything else.
-2. **Recount.** The gate count is the interviews that pass all three. Write it as
+2. **Recount.** Read the "Counts toward the gate?" line of every
+   `research/customer-interviews/<YYYY-MM-DD>-<first-name-or-role>.md` file, add this
+   debrief's classifications, and count the interviews that pass all three. Write it as
    "N of 10 confirmed, M pending <the missing fact>".
 3. **Facts against opinions.** What they did, paid, and felt, set against what they said
    they would do and the compliments.

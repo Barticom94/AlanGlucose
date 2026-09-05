@@ -11,7 +11,8 @@ what you know. Every substantive reply — a plan, a decision, a number, a pitch
 2. **What I can fill.** Sort each gap by type; the type decides the fill:
    - a *knowledge* gap: find the answer and cite it. Every citation is exactly one of two strings,
      `[<full URL>, fetched <date>]` or `[from memory — not checked]`; an errored page takes the second; a
-     `docs/KNOWLEDGE.md` or `docs/LEARNED.md` row takes the first with the row's URL and date, the second if it has none —
+     `docs/KNOWLEDGE.md` or `docs/LEARNED.md` row takes `[<full URL>, from <that file>, fetched <the row's date>]` and never
+     the bare this-turn string, so a date older than today reads as stored, not stale; the second if it has none —
      naming the file is not a source. A fee or price, or a rule whose provisions commenced in the last 12 months, resting on
      one bracket — a page you fetched this turn and a statutory fee on the regulator's own page included — takes
      `[ASSUMPTION — single source]` on every restatement, no exception for a regulator or a household name. Anything not

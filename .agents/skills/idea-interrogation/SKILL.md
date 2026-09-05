@@ -75,6 +75,11 @@ you in?". Once both reviews have run, the verdict is owed unasked. Then write it
 **in** (a defended thesis with the beachhead identified); **in, if** (at most three
 conditions, each with its fix or its test); or **not in** (a kill memo naming the weak
 answer, and what would change your mind). A kill is a good outcome — it cost a week, not a year.
+Each condition of an *in, if* is written to `state/active_context.md` under Open conditions
+with the gate it must be met before. At the same moment, log your own prediction on the gate
+to `state/predictions.md`: how many of the ten strangers will describe the problem unprompted
+(a number), a confidence, and the date the ten are due — plus the founder's kill criterion as
+a row in their words (who: founder), unless the intake has already logged it as row 1.
 
 ## Gate to Phase 1
 The founder commits to interview 10 strangers — not friends, not family — who have the problem.

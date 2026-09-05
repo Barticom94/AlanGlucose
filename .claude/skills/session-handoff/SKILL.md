@@ -15,15 +15,17 @@ context is not guaranteed.
 1. **`state/active_context.md`** — update the current focus, add a dated line to recent
    changes, and write the next concrete step. Make that step specific enough to start cold.
 2. **`state/progress.md`** — move items between Done / In progress / Not started. Update the
-   phase-gate progress count.
+   phase-gate progress count, and the Spine line if the number moved.
 3. **`state/decisions_log.md`** — if a decision was made this session, append an entry
    (newest at the top): decision, context, alternatives, why.
-4. **`state/risks.md`** — if a new risk surfaced, add it with a test and a mitigation.
-5. **`state/financials.md`** — if any number changed, update it with its source.
-6. **Open question** — write the single most important open question into `active_context.md`.
-7. **Commit** — stage and commit `state/` and `docs/LEARNED.md` to git with a short message,
+4. **`state/predictions.md`** — any forward-looking number or date given this session (by
+   you or the founder) becomes a row.
+5. **`state/risks.md`** — if a new risk surfaced, add it with a test and a mitigation.
+6. **`state/financials.md`** — if any number changed, update it with its source.
+7. **Open question** — write the single most important open question into `active_context.md`.
+8. **Commit** — stage and commit `state/` and `docs/LEARNED.md` to git with a short message,
    if git is set up. This is the git-anchored checkpoint the brain relies on.
-8. **Learnings** — if `docs/LEARNED.md` has rows not yet marked `shared`, and
+9. **Learnings** — if `docs/LEARNED.md` has rows not yet marked `shared`, and
    `CLAUDE.local.md` does not say `share-learnings: no`, run the `contribute-learnings`
    skill. It shares only the research the brain did, never the founder's inputs, and shows
    every row before anything is sent. Offer at most once per session.

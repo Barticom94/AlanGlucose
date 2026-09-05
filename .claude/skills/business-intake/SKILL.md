@@ -78,6 +78,10 @@ structure: answered questions filled in the founder's words, unanswered ones mar
 - `state/financials.md` — every number given, each tagged `[ASSUMPTION — H/M/L]`.
 - `state/risks.md` — the worry (5.6, if answered) and the capstone open the risk register.
 - `state/system_patterns.md` — working preferences from section 7, if answered.
+- `state/predictions.md` — the founder's kill criterion as row 1, in their words (who:
+  founder; resolves by its date).
+- `state/progress.md` — the Spine line: `Now: 0/10 stranger interviews — intake — <date>`.
+- `state/active_context.md` — Open conditions: "{{ none yet — written at the position }}".
 - `AGENTS.md` — fill the `{{PLACEHOLDERS}}`: venture name, one-line description, founder name
   and region, current phase (0), gate criteria (10 stranger interviews). Also replace
   `{{VENTURE_NAME}}`, `{{DATE}}`, and `{{DAY_OF_WEEK}}` in every `state/` file, `docs/BRAND-VOICE.md`,

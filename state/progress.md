@@ -1,10 +1,16 @@
 # Progress
 
-> What works, what is left, current status. Updated at every task boundary. Loaded every
-> session — keep it under 30 lines; archive completed phases to state/decisions_log.md.
+> Status against the gate. Updated at every task boundary; under 30 lines — archive done phases to `state/decisions_log.md`.
 
 ## Status
 Phase 0 — Idea. Started {{DATE}}.
+
+## Spine
+One number per phase, reported at every review with its source and date: Phase 0 stranger interviews
+n/10 · Phase 1 real commitments n/3 · Phase 2 paying customers n/10 and 7-day retention % · Phase 3
+CAC:LTV in the one channel and gross margin % · Phase 4 monthly EBITDA or runway months.
+Now: {{ number — source — date }}
+Last review: {{ number — date }}
 
 ## Done
 - Brain scaffolded and configured.

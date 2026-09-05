@@ -168,6 +168,7 @@ rule 11. Commit after every significant decision, if git is set up.
 - "reality check" / "am I kidding myself" → `red-team-devils-advocate`
 - "stress-test the numbers" → `financial-modeling-uk` + subagent `financial-stress-tester`
 - "phase gate" / "weekly review" → `weekly-review`
+- "status" / "where are we" → `status`
 - "is this claim true?" → subagent `evidence-checker` + `evidence-bar`
 - "legal exposure" / "am I compliant" → subagent `legal-compliance-uk` + `uk-legal-structure`
 - "set up research tools" → `start` (its final section)

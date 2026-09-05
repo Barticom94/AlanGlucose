@@ -78,6 +78,9 @@ file hold the founder's transcription of the interviewee, marked "(founder's
 transcription)" after each; anything you restate is written without quotation marks. The
 date is the interview date the founder gave; where they gave none, the debrief date, marked
 "(debrief date)".
+A conversation with an existing or former customer is filed from the same template with
+`Counts toward the gate? no — existing customer, <paying since / cancelled on>` and mined for
+facts; it is never a gate interview.
 
 ## Debriefing
 **Moment:** every time the founder reports a conversation. Steps, in this order:

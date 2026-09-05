@@ -22,7 +22,10 @@
 - **Answer:** {{ what they did or said, or "not recorded" }}
 
 ## Counts toward the gate?
-{{ yes / no }} — {{ why: which of stranger · has the problem · real conversation it passes or misses }}
+{{ yes / no / pending — <the missing fact> }} — {{ why: which of stranger · has the problem · real conversation it passes, misses, or has not yet been asked }}
+"no" is written only where the founder's words settle a fact against the interview (family;
+"five minutes"); a fact the founder has not yet given reads "pending — <that fact>", so the
+next debrief's Recount reads it as pending, not excluded.
 
 ## Open follow-up
 - {{ the next contact, or "none" }}

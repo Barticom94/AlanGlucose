@@ -46,10 +46,19 @@ from `research/customer-interviews/SOURCING-TEMPLATE.md` and filled with:
   `state/business-brief.md` section 5. Re-read section 5 against every slot before the file
   is written; a slot outside those hours is a defect, corrected before the file is saved.
   Where section 5 holds no hours, the slots read "not recorded" and the reply ends with one
-  question: which hours.
+  question: which hours. Every slot line carries its `Source (#)` column — the number of the
+  source it is provisionally drawn from, or "unconfirmed" while no source has replied; a slot
+  with a date and no source column is not written.
 - The one-sentence ask — what the founder says to get a twenty-minute conversation, with no
-  pitch in it.
+  pitch in it. Before it goes into the file, count its sentences: more than one is rewritten
+  as one before the file is saved, and the sentence that survives is the one quoted in the
+  reply.
 - The calendar date the ten are done by.
+- The read-back, in the reply: the `→ research/customer-interviews/SOURCING.md` line quotes
+  the segment sentence in quotation marks with its source after it — `(brief, section 1.1)`
+  or `(this session)` — then names each remaining template heading in order (sources, slots
+  with their source numbers, the ask, done-by) with the value written under it; a heading
+  not named in that line is a field not written.
 
 Every later "who next and when" answer names the next open slot in that file with its
 calendar date. When the founder's hours change, rewrite the slots in the same session.
@@ -76,7 +85,13 @@ date is the interview date the founder gave; where they gave none, the debrief d
    (how they were found; friend, family, colleague, and existing customer are not
    strangers); *has the problem* (the last time it happened, in the interviewee's words);
    *a real conversation* (twenty minutes or more, notes taken). Ask one question per
-   missing fact before anything else.
+   missing fact before anything else. Write the stranger fact as one of two lines and no
+   other: `Stranger: yes — first contact was <the post, directory, or referral>`, or
+   `Stranger: no — <how they knew the founder before the call was arranged>`. Anyone who knew
+   the founder by name or face before the call — through family, friendship, work, or the
+   founder's day job, a customer served across a counter included — takes the second line;
+   the person they introduce takes the first. The founder's own contacts enter
+   `SOURCING.md` as referrers, and the interviewee is always the person referred.
 2. **Recount.** Read the "Counts toward the gate?" line of every
    `research/customer-interviews/<YYYY-MM-DD>-<first-name-or-role>.md` file, add this
    debrief's classifications, and count the interviews that pass all three. Write it as

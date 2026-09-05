@@ -38,7 +38,7 @@ this skill covers what is SaaS- and UK-specific on top of it.
 - Annual billing improves cash flow and lowers churn exposure (a customer cannot cancel
   monthly), but defers the founder's read on whether the price and product are working.
   Offer both; a common discount for paying annually is one to two months free (roughly
-  15–17%) [ASSUMPTION — low risk: a market convention, not a rule].
+  15–17%) [ASSUMPTION — L — a market convention, not a rule].
 - Do not push annual-only before the venture has 7-day/30-day retention data — locking in a
   customer who was going to churn just delays the evidence.
 

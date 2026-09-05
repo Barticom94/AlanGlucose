@@ -46,7 +46,7 @@ customers.
 2. **AI-assisted code** — tools such as Lovable, Bolt.new, Replit, or Claude Code paired with a
    framework; entry tiers cluster around $20–$25/month plus usage-based credits, but the credit
    component dominates real cost — price the specific tool on its own pricing page before
-   committing [ASSUMPTION — med risk: entry-tier band, not a vendor quote]. Good middle ground
+   committing [ASSUMPTION — M — entry-tier band, not a vendor quote]. Good middle ground
    for a founder with some technical comfort who wants real code without hiring.
 3. **Hiring a developer** — median UK contractor day rate ~£500 (itjobswatch.co.uk, data to 21
    Apr 2026), with a London premium of roughly 20–30%; junior work runs lower, senior/

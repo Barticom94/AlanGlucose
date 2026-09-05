@@ -30,3 +30,4 @@ Copy this shape, newest at the top:
 - **Why:** A structured, anti-sycophantic, phase-gated process catches a bad idea before
   it costs real money and time.
 - **Supersedes:** —
+- **Whose:** brain — recommendation; founder's decision not given

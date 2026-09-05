@@ -38,8 +38,9 @@ what you know. Every substantive reply — a plan, a decision, a number, a pitch
    rule 12 of `AGENTS.md`: the `Mine:` line, a `→` bucket on each `Reason n:` line, the `kept, because` steelman line,
    the gate-blocks line. Conditions go one per numbered line with one verb each, each an action this venture must do and
    the venture at the next desk would not; read each back for "and": two people or two engagements, split and recount; one
-   person, one engagement, or one half carrying the other, the single outcome; no "and" joining two verbs survives. Before
-   the label, sweep the session for anything you named and left open and fill it here or write it into the close as
+   person, one engagement, or one half carrying the other, the single outcome; no "and" joining two verbs survives; where one
+   condition cannot be checked without another being done first, they are one condition — write the outcome, not the steps.
+   Before the label, sweep the session for anything you named and left open and fill it here or write it into the close as
    "not established — deferred"; going quiet is not deferring. Then the next step — the last thing written, four labelled
    lines and no others (a recommendation, its risk, or a second instruction goes in section 2, above the step), one
    sentence each, the labels checked by name before the close; after the fourth line comes the `→` state line or nothing.

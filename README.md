@@ -52,7 +52,7 @@ harnesses to read it. Not yet tested end-to-end in Codex — tell the maintainer
 - **`AGENTS.md`** — the behavioural contract: phases, gates, and the operating rules.
 - **`CLAUDE.md`** — Claude Code's entry point; imports `AGENTS.md` and the two live state files.
 - **`state/`** — the memory bank: plain markdown, updated at every task boundary.
-- **`.claude/skills/`** — 28 core skills, vertical-neutral, from idea interrogation to UK tax.
+- **`.claude/skills/`** — 29 core skills, vertical-neutral, from idea interrogation to UK tax.
 - **`packs/`** — vertical packs (`ecommerce`, `saas`, `services`, `physical`) installed by
   the intake. More than one can apply.
 - **`.claude/agents/`** — 14 subagents, run in builder→reviewer pairs to fight optimism bias.
@@ -95,7 +95,7 @@ current gate is met — that is a feature, not a bug. `BOOTSTRAP.md` is the oper
 │   ├── settings.json      Output style, deny rules, one plain-text reminder hook
 │   ├── SYCOPHANCY.md      Anti-sycophancy contract
 │   ├── agents/            14 subagents
-│   ├── skills/            28 core skills
+│   ├── skills/            29 core skills
 │   ├── hooks/             4 optional Python helpers
 │   └── output-styles/     partner (default), reviewing, planning, building, presenting
 ├── .agents/               Generated mirror of the skills and the reply shape for Codex, Gemini CLI, Cursor

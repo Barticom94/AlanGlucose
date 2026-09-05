@@ -35,7 +35,7 @@ counteract that, deliberately:
 - **`AGENTS.md`** — the behavioural contract, read by every harness; `CLAUDE.md` imports it.
 - **`state/`** — a memory bank of plain markdown, updated at every task boundary, so the
   thread survives long sessions and compaction.
-- **`.claude/skills/`** — 28 core, vertical-neutral skills, from idea interrogation to UK tax.
+- **`.claude/skills/`** — 29 core, vertical-neutral skills, from idea interrogation to UK tax.
 - **`packs/`** — four vertical packs (ecommerce, saas, services, physical), installed by the
   intake so no kind of business is privileged.
 - **`.claude/agents/`** — 14 subagents, used in builder→reviewer pairs.

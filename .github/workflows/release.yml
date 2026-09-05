@@ -28,7 +28,7 @@ jobs:
         run: |
           version="${GITHUB_REF_NAME#v}"
           awk -v v="$version" '
-            /^## \[/ { p = ($0 ~ ("\\[" v "\\]")) ; if (p) { print; next } }
+            /^## \[/ { p = (index($0, "[" v "]") > 0); if (p) { print; next } }
             p && /^\[/ { p = 0 }
             p { print }
           ' CHANGELOG.md > section.md

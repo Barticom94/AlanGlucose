@@ -7,8 +7,14 @@ in a clean context) — not a live founder session.
 
 ## [Unreleased]
 
-Candidates on `main` after v1.3.0, from intake iteration 21, post-intake round 3 and the Phase 3 round. Untested
-as a set at the time of writing.
+Nothing yet.
+
+## [1.3.1] — 2026-09-05
+
+Fixes from intake iteration 21, post-intake round 3 and the Phase 3 round. Confirmed on a targeted rerun of the
+seven scenarios that produced the v1.3.0 residuals: 39/44 expectations and zero invented evidence in all seven
+(three of them had produced it on v1.3.0). The rerun's synthesis was cut short by a usage limit, so the graders'
+three unaudited high flags stand unreviewed; the anti-sycophancy floor held in every transcript.
 
 ### Changed
 - Assumption tags travel into the rule-12 `Reason n:` lines; a Reason line restating a tagged claim untagged is a defect.
@@ -126,7 +132,8 @@ First public release.
 - UK-only context; Yorkshire- and founder-specific wording removed.
 - Destructive commands blocked by `permissions.deny`; optional Python hooks wired per machine, never required.
 
-[Unreleased]: https://github.com/Barticom94/AlanGlucose/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/Barticom94/AlanGlucose/compare/v1.3.1...HEAD
+[1.3.1]: https://github.com/Barticom94/AlanGlucose/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/Barticom94/AlanGlucose/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/Barticom94/AlanGlucose/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/Barticom94/AlanGlucose/compare/v1.2.0...v1.2.1

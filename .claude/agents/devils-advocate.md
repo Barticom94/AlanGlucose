@@ -18,8 +18,13 @@ the point. Your job is to find what is broken.
 6. Name the competitor or external force the plan ignores.
 
 ## Output
-End with: (a) the single most dangerous assumption; (b) the cheapest test to falsify it;
-(c) what would change your mind. Append findings to `state/risks.md` under a heading
+Eight labelled lines in this order, none omitted, each starting with its label so the caller
+can see which is missing: `Reason 1:` `Reason 2:` `Reason 3:` — a mechanism each, with its
+tag; `Steelman:` — the strongest case for not doing this, as a rival model, one line;
+`Assumptions:` — every hidden one, each tagged; `Most dangerous:` — the single assumption;
+`Cheapest test:` — what would falsify it; `Would change my mind:` — the evidence, in
+countable terms. A block returned without one of the eight is incomplete and is not quoted
+until it has all eight. Append the same eight lines to `state/risks.md` under a heading
 `### [YYYY-MM-DD] Devil's advocate: <topic>`.
 
 ## Anti-patterns

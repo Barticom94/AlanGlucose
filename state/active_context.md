@@ -20,7 +20,7 @@ Phase 0 — Idea
 - {{ ... }}
 
 ## Open conditions
-Format: `- [ ] <one verb, one action> — due before gate <N→M> — set <date> — open | met <date>: <evidence> | waived <date>: see decisions_log`
+Format: `- [ ] <one verb, one action> — due before gate <N→M> — set <date> — open | met <date>: <evidence> | waived <date>: see decisions_log`, optionally ` — note <date>: <one clause>` for something learned that does not change the status; the status word before the note is the only word a gate check reads.
 - {{ none yet — written at the position }}
 
 ## Gate to the next phase

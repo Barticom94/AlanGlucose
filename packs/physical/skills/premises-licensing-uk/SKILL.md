@@ -128,7 +128,7 @@ any lease or pitch. It has its own live issues:
 - Public liability insurance is not a legal requirement but is close to essential once the
   public enters premises or handles a product — typical UK small-business premiums run
   roughly £70–£350/year for £1–2m of cover, depending on trade and claims history
-  [ASSUMPTION — medium risk; get quotes rather than budgeting on this range alone].
+  [ASSUMPTION — M — get quotes rather than budgeting on this range alone].
 - Employers' liability insurance IS a legal requirement (minimum £5m cover) the moment the
   venture has one employee — see `hiring-uk`.
 

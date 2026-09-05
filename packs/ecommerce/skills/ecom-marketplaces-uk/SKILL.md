@@ -33,7 +33,7 @@ commitments (`AGENTS.md`).
 A marketplace wins when the founder needs discovery the own store cannot yet buy or earn —
 existing shopper intent, and little marketing budget to build traffic from scratch (check the
 founder's real budget from the intake, `state/business-brief.md` section 5, rather than
-assuming) `[ASSUMPTION — low risk]`. An own store wins once the venture has, or can build,
+assuming) `[ASSUMPTION — L]`. An own store wins once the venture has, or can build,
 its own traffic (see `marketing-seo`,
 `marketing-paid`), because the marketplace's fee and the loss of the customer relationship
 (no owned email list, no repeat-purchase data) become the more expensive choice over time.
@@ -75,7 +75,7 @@ before modelling.** Amazon and Etsy figures already include VAT treatment as not
 ## The Buy Box and reviews (Amazon)
 Winning the Buy Box (the default "Add to Basket" button on a shared listing) is driven by
 price, availability, fulfilment speed (FBA is favoured), and seller performance metrics —
-not by being cheapest alone `[ASSUMPTION — medium risk; Amazon does not publish the exact
+not by being cheapest alone `[ASSUMPTION — M — Amazon does not publish the exact
 weighting]`. Reviews compound the same way as an own store, but incentivised or fake reviews
 are now explicitly illegal: the Digital Markets, Competition and Consumers Act 2024 added
 fake and undisclosed-incentivised reviews to the list of practices always considered unfair,

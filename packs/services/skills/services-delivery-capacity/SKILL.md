@@ -14,7 +14,7 @@ Industry benchmarks talk about a "utilisation rate" — the share of paid, full-
 that are billable. Solo consultants working full-time on their practice reportedly average
 roughly 50–70% billable utilisation, well below the 70–85% typical of staffed consulting
 firms, because business development, admin, and delivery all compete for the same hours
-[ASSUMPTION — medium risk; aggregated professional-services benchmark sources, 2026 — treat
+[ASSUMPTION — M — aggregated professional-services benchmark sources, 2026 — treat
 as directional, not a target]. That benchmark assumes a full-time practice. For a founder
 running this venture alongside other commitments, it does not transfer directly — start from
 the founder's real weekly hours for the venture (the intake, section 5), and work out
@@ -25,7 +25,7 @@ delivery capacity from there, not from a full-time-consultant norm.
    (the intake, section 5) — do not assume a number.
 2. Split those hours three ways: delivery (billable), sales/discovery, and admin
    (invoicing, proposals, running this brain). Delivery is rarely more than half of total
-   hours for a founder still selling their own work [ASSUMPTION — low risk; heuristic, not a
+   hours for a founder still selling their own work [ASSUMPTION — L — heuristic, not a
    benchmark — replace with the founder's own logged data after the first two engagements].
 3. Convert the productised offer's time-to-deliver (see `services-productised-offer`) into
    the number of concurrent clients the available delivery hours can actually support.

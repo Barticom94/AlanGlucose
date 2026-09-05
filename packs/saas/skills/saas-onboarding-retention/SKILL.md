@@ -46,13 +46,13 @@ their first project and invited a teammate"), not a vague feeling.
   changes get hidden inside an average.
 - **Logo churn** — the percentage of paying customers who cancel in a period. A commonly cited
   healthy range for small-business SaaS is under ~5% monthly, tightening toward under 1% for
-  enterprise contracts [ASSUMPTION — med risk: a widely cited industry rule of thumb, not a
+  enterprise contracts [ASSUMPTION — M — a widely cited industry rule of thumb, not a
   single dated source — check current benchmark reports (e.g. ChartMogul, ProfitWell) before
   treating it as a target].
 - **Net revenue retention (NRR)** — revenue from the existing customer base this period versus
   the same base last period, including upgrades, downgrades, and churn. Above 100% means
   expansion revenue outpaces churn; best-in-class B2B SaaS is commonly cited around 110–120%+
-  [ASSUMPTION — med risk: a widely cited benchmark range, not a single dated source — verify
+  [ASSUMPTION — M — a widely cited benchmark range, not a single dated source — verify
   against a current SaaS benchmark report before relying on it].
 - Put all three in `state/financials.md` and re-check them at every `weekly-review`.
 

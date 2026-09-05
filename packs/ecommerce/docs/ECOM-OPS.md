@@ -14,7 +14,7 @@
 |---------|--------------------------------------|----------|
 | Royal Mail | 2nd-class small parcel from ~£4.19; 1st-class stamp £1.80, 2nd class 91p since 7 April 2026 [Royal Mail April 2026 tariff — verify at royalmail.com] | Letters and lightweight parcels; the only carrier with a Universal Service Obligation |
 | Evri | ParcelShop drop-off from ~£2.62 (up to 5kg flat) [reported pricing, accessed September 2026 — verify at evri.com] | Cheapest SME standard delivery; good marketplace integrations; highest customer-complaint share [Ofcom, October 2025 — verify at ofcom.org.uk] |
-| DPD | ~£5–£10+ next-day [reported pricing, accessed September 2026 — verify at dpd.co.uk] | Premium ecommerce: one-hour Predict window, >95% on-time [ASSUMPTION — medium risk; not from a published source] |
+| DPD | ~£5–£10+ next-day [reported pricing, accessed September 2026 — verify at dpd.co.uk] | Premium ecommerce: one-hour Predict window, >95% on-time [ASSUMPTION — M — not from a published source] |
 | Yodel | Yodel Direct from ~£2.42–£2.50 via InPost lockers [reported pricing, accessed September 2026 — verify at yodel.co.uk] | Cheapest budget option; stricter size limits |
 
 `fulfilment-shipping-uk` (physical-goods pack) owns carrier selection method; this table is
@@ -66,13 +66,13 @@ check the vendor's own page rather than any figure written down here.
 ## The operational layer (Phase 2+, once the venture is live)
 
 - **Customer service** — start with Gmail or a Help Scout/Front trial; Chatwoot if
-  self-hosting; Gorgias (~£50/mo) [ASSUMPTION — medium risk; not from a published source]
+  self-hosting; Gorgias (~£50/mo) [ASSUMPTION — M — not from a published source]
   once tightly integrated with Shopify is worth it (~100+ tickets/month)
-  [ASSUMPTION — medium risk; not from a published source]. See the `ops-customer-service`
+  [ASSUMPTION — M — not from a published source]. See the `ops-customer-service`
   skill.
-- **Inventory** — Shopify native to ~£300k revenue [ASSUMPTION — medium risk; not from a
+- **Inventory** — Shopify native to ~£300k revenue [ASSUMPTION — M — not from a
   published source]; then Cin7 Core or Linnworks. Phase-gate threshold: 5,000+ SKUs or
-  multi-warehouse [ASSUMPTION — medium risk; not from a published source]. See
+  multi-warehouse [ASSUMPTION — M — not from a published source]. See
   `ops-inventory` (physical-goods pack — install `packs/physical` if you hold stock).
 - **Returns** — pre-paid label via Royal Mail Tracked Returns or Evri Returns; refund within
   14 days per the Consumer Contracts Regulations. See `ops-returns` (physical-goods pack —

@@ -9,7 +9,7 @@
    decline or redirect anything outside it rather than silently re-scoping to fit.
 2. **Proposal** — see `services-proposals-contracts-uk` for structure and terms.
 3. **Contract + deposit** — signed SOW and a deposit (commonly 30–50%
-   [ASSUMPTION — low risk, common UK freelance practice, 2026]) before work starts.
+   [ASSUMPTION — L — common UK freelance practice, 2026]) before work starts.
 4. **Onboarding** — kickoff call, access exchanged, first milestone dated (see
    `services-delivery-capacity`).
 5. **Delivery** — against the stated milestones; log any out-of-scope request the day it
@@ -19,7 +19,7 @@
    note in `state/decisions_log.md` on what to change for the next engagement.
 
 ## Invoicing and UK late-payment rules
-- Standard commercial payment terms are **14–30 days** [ASSUMPTION — low risk, common UK
+- Standard commercial payment terms are **14–30 days** [ASSUMPTION — L — common UK
   freelance practice, 2026]; state the term on every invoice and in the contract, not just
   verbally.
 - The **Late Payment of Commercial Debts (Interest) Act 1998** (as amended by the Late
@@ -53,8 +53,8 @@
 
 | Cover | Protects against | Indicative annual cost (2026) | Note |
 |-------|-------------------|--------------------------------|------|
-| **Professional indemnity (PI)** | A claim that advice or work caused the client a financial loss | roughly £150–£400 for £250k cover, general freelancer; £300–£900+ for higher-risk advisory work [ASSUMPTION — medium risk, comparison-site ranges] | Many corporate clients require proof before signing, sometimes at a stated minimum (commonly £1m [ASSUMPTION — low risk, common UK freelance practice, 2026]) |
-| **Public liability (PL)** | A claim of physical injury or property damage caused by the founder or the business | roughly £50–£300 for £1–2m cover; desk-based, low-footfall work sits at the lower end [ASSUMPTION — medium risk, comparison-site ranges] | Relevant mainly if the founder visits client sites or hosts clients in person |
+| **Professional indemnity (PI)** | A claim that advice or work caused the client a financial loss | roughly £150–£400 for £250k cover, general freelancer; £300–£900+ for higher-risk advisory work [ASSUMPTION — M — comparison-site ranges] | Many corporate clients require proof before signing, sometimes at a stated minimum (commonly £1m [ASSUMPTION — L — common UK freelance practice, 2026]) |
+| **Public liability (PL)** | A claim of physical injury or property damage caused by the founder or the business | roughly £50–£300 for £1–2m cover; desk-based, low-footfall work sits at the lower end [ASSUMPTION — M — comparison-site ranges] | Relevant mainly if the founder visits client sites or hosts clients in person |
 | **Employers' liability** | N/A until the first employee | Legally required from the first employee — statutory minimum **£5m** cover, **£2,500/day** penalty for trading uninsured. Status follows the working relationship, not the label: a labour-only subcontractor working under the founder's direction, hours, and equipment generally must be covered. A sole director who owns ≥50% of the share capital and is the only employee is exempt. [Employers' Liability (Compulsory Insurance) Act 1969 / HSE — verify at hse.gov.uk; confirm with the insurer before engaging the first subcontractor] | See `hiring-uk` |
 
 Get 2–3 live quotes (e.g. Hiscox, Simply Business, AXA) before budgeting a figure into
@@ -65,7 +65,7 @@ same profession and cover level, so treat them as a starting point, not a quote.
 - Every deliverable has a written boundary (see `services-productised-offer`). Anything
   outside it is logged the day it is asked for, against the relevant engagement.
 - Three or more out-of-scope requests on one engagement is the trigger to raise a paid
-  change order, not to keep absorbing the work quietly [ASSUMPTION — low risk; heuristic, not
+  change order, not to keep absorbing the work quietly [ASSUMPTION — L — heuristic, not
   a benchmark — replace with the founder's own logged data after the first two engagements].
 - A change order is short: what is being added, the price, and the revised delivery date —
   sent and agreed before the extra work starts, not after it is already done.

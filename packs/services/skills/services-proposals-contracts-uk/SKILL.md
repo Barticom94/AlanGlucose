@@ -28,8 +28,8 @@ visible instead of buried in an old document.
 
 ## Terms that matter most for a solo service business
 - **Payment terms** — invoice on milestone or monthly, due within **14–30 days**
-  [ASSUMPTION — low risk, common UK freelance practice, 2026]. A deposit (commonly 30–50%
-  [ASSUMPTION — low risk, common UK freelance practice, 2026]) before starting protects
+  [ASSUMPTION — L — common UK freelance practice, 2026]. A deposit (commonly 30–50%
+  [ASSUMPTION — L — common UK freelance practice, 2026]) before starting protects
   cashflow and filters out non-serious clients.
 - **IP ownership** — state explicitly when IP transfers to the client: on final payment
   (safer for the founder) or on delivery. Silence defaults to messy, case-by-case
@@ -79,10 +79,10 @@ visible instead of buried in an old document.
   loss — the core risk in a services business, distinct from public liability (physical
   injury or property damage — see `docs/SERVICES-OPS.md`).
 - Many corporate clients will not sign without proof of PI cover, sometimes at a stated
-  minimum (commonly £1m [ASSUMPTION — low risk, common UK freelance practice, 2026]).
+  minimum (commonly £1m [ASSUMPTION — L — common UK freelance practice, 2026]).
 - Indicative cost is wide and profession-dependent: roughly **£150–£400/year** for £250k
   cover for a general freelancer, rising toward **£300–£900+/year** for higher-risk advisory
-  work [ASSUMPTION — medium risk; comparison-site ranges, 2026 — get 2–3 live quotes, e.g.
+  work [ASSUMPTION — M — comparison-site ranges, 2026 — get 2–3 live quotes, e.g.
   Hiscox or Simply Business, before budgeting a figure].
 - Some professions (e.g. solicitors, financial advisers, insurance brokers) are legally or
   regulator-required to hold PI cover — check whether the founder's specific field carries a

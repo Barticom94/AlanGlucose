@@ -59,7 +59,7 @@ delivery quality is proven.
 Every "quick add" outside the stated deliverable erodes the margin the price was built on.
 Log every out-of-scope request the day it is made; three or more on one engagement is the
 signal to raise the next quote or split the ask into a paid add-on rather than absorb it
-[ASSUMPTION — low risk; heuristic, not a benchmark — replace with the founder's own logged
+[ASSUMPTION — L — heuristic, not a benchmark — replace with the founder's own logged
 data after the first two engagements]. See `services-delivery-capacity` for capacity limits
 and `services-proposals-contracts-uk` for putting the boundary in writing.
 

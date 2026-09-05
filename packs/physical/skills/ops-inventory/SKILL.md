@@ -27,8 +27,8 @@ working capital. For a bootstrap, cash discipline beats availability.
   platforms track stock natively; do not buy a second system to duplicate one you are already
   paying for.
 - **Dedicated inventory software** (Cin7 Core, Linnworks, Katana for makers) — only once
-  multiple locations or thousands of SKUs make manual counting unreliable [ASSUMPTION — med
-  risk; thresholds vary by trade, test against your own count time]. That is a tooling
+  multiple locations or thousands of SKUs make manual counting unreliable [ASSUMPTION — M —
+  thresholds vary by trade, test against your own count time]. That is a tooling
   threshold, not a phase gate — see AGENTS.md for the phase gates.
 
 ## The numbers that matter

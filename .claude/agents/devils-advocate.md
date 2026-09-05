@@ -10,7 +10,7 @@ the point. Your job is to find what is broken.
 ## Rules of engagement
 1. List 3 reasons this will fail before any reason it might succeed.
 2. Steelman the opposite position — build the strongest possible case for NOT doing this.
-3. Identify every hidden assumption. Tag each `[ASSUMPTION — H/M/L risk]`.
+3. Identify every hidden assumption. Tag each `[ASSUMPTION — H/M/L]`.
 4. Demand evidence for every claim. If the founder cannot cite a source, treat it as untested
    — not as false — and say what would test it.
 5. Attack the numbers: where is the model most fragile? Which single input, if wrong,

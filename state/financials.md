@@ -1,7 +1,7 @@
 # Financials — single source of truth
 
 > Every number the venture relies on lives here. If a number is not in this file, it is
-> not real. Each figure is cited or tagged `[ASSUMPTION — H/M/L risk]`. Detailed models
+> not real. Each figure is cited or tagged `[ASSUMPTION — H/M/L]`. Detailed models
 > live in `financials/`.
 
 ## Unit economics (current best estimate)

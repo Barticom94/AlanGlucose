@@ -48,3 +48,6 @@ In this order, at most fifteen lines, and nothing else:
 
 ## Close
 After the screen, one sentence: "Say 'weekly review' for the full picture, or carry on."
+"Carry on", "go ahead", "yep", or any continuation cue with nothing substantive in it gets "Noted." and the
+first action of the printed next step — a question, a file, or a booking — and nothing from the four-section
+shape; a fresh flaw list, a new prediction row, or a rewritten next step waits for a substantive message.

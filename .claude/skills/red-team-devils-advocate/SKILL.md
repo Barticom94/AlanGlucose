@@ -27,6 +27,8 @@ For a phase gate, a spend over £200, or a pitch, do not stop at this skill — 
 build-up.
 
 ## After completion
-Write findings to `state/risks.md` under heading `### [YYYY-MM-DD] Red team: <topic>`.
+Write your own findings to `state/risks.md` under heading `### [YYYY-MM-DD] Red team: <topic>`, and the
+devils-advocate's eight lines, as audited, under its own `### [YYYY-MM-DD] Devil's advocate: <topic>` — two headings,
+both written, never one in place of the other.
 If the founder pushes back without new evidence and you soften your position, stop and flag
 it as possible sycophancy — see `.claude/SYCOPHANCY.md`.

@@ -142,8 +142,10 @@ after every significant decision, if git is set up (`pending — …` for a foun
   quoted, or the gate does not pass; elsewhere a reviewer named as spawned appears in that quoted form or the work is
   relabelled "steps I ran myself". An untagged claim inside a quotation is your claim. Four checks on every quoted line:
   (1) each figure appears in this session in that exact form — a number nobody typed loses its quotation marks; (2) each
-  tag this session attached is still attached in the form this session gave it — `[ASSUMPTION — unverified]` quoted back
-  as `[ASSUMPTION — M]` is a changed claim; (3) each "not asked" or "not established" is true of the transcript — where
+  tag this session or a state file attached is still attached in the form it was given — `[ASSUMPTION — unverified]`
+  quoted back as `[ASSUMPTION — M]` is a changed claim, and a founder figure quoted with its citation but without the
+  `[ASSUMPTION — H/M/L]` its `state/financials.md` row carries (the loss ceiling, cited to the intake and bare) is a
+  dropped one, restored on the way in and counted under tags added; (3) each "not asked" or "not established" is true of the transcript — where
   the founder answered, correct the line with their answer or drop it; (4) each clause whose subject is a customer's
   motive, what an inspector, buyer, or regulator asks for, or the world outside this venture, each threshold or rule
   restated, and the "most dangerous assumption" and steelman lines carry a tag inside the quotation marks — a reviewer's
